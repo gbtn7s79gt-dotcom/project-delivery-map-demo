@@ -1503,6 +1503,7 @@ const DATA = {
   ],
   "customers": [
     {
+      "id": "p1",
       "province": "上海",
       "city": "上海",
       "customer": "上海城投",
@@ -1580,9 +1581,12 @@ const DATA = {
         }
       ],
       "lon": 121.4737,
-      "lat": 31.2304
+      "lat": 31.2304,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 6
     },
     {
+      "id": "p2",
       "province": "上海",
       "city": "上海",
       "customer": "上海城投城桥污水处理厂",
@@ -1617,9 +1621,12 @@ const DATA = {
         }
       ],
       "lon": 121.4737,
-      "lat": 31.2304
+      "lat": 31.2304,
+      "cityCustomerIndex": 2,
+      "cityCustomerTotal": 6
     },
     {
+      "id": "p3",
       "province": "上海",
       "city": "上海",
       "customer": "上海枫亭水质净化有限公司",
@@ -1654,9 +1661,12 @@ const DATA = {
         }
       ],
       "lon": 121.4737,
-      "lat": 31.2304
+      "lat": 31.2304,
+      "cityCustomerIndex": 3,
+      "cityCustomerTotal": 6
     },
     {
+      "id": "p4",
       "province": "上海",
       "city": "上海",
       "customer": "上海泓济环保科技股份有限公司",
@@ -1691,9 +1701,12 @@ const DATA = {
         }
       ],
       "lon": 121.4737,
-      "lat": 31.2304
+      "lat": 31.2304,
+      "cityCustomerIndex": 4,
+      "cityCustomerTotal": 6
     },
     {
+      "id": "p5",
       "province": "上海",
       "city": "上海",
       "customer": "上海浦东威立雅",
@@ -1728,9 +1741,12 @@ const DATA = {
         }
       ],
       "lon": 121.4737,
-      "lat": 31.2304
+      "lat": 31.2304,
+      "cityCustomerIndex": 5,
+      "cityCustomerTotal": 6
     },
     {
+      "id": "p6",
       "province": "上海",
       "city": "上海",
       "customer": "新金山",
@@ -1822,9 +1838,12 @@ const DATA = {
         }
       ],
       "lon": 121.4737,
-      "lat": 31.2304
+      "lat": 31.2304,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 6
     },
     {
+      "id": "p7",
       "province": "云南",
       "city": "宣威",
       "customer": "云南水投",
@@ -1859,9 +1878,12 @@ const DATA = {
         }
       ],
       "lon": 104.104,
-      "lat": 26.219
+      "lat": 26.219,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p8",
       "province": "云南",
       "city": "昆明",
       "customer": "昆明滇池水务",
@@ -1896,9 +1918,12 @@ const DATA = {
         }
       ],
       "lon": 102.8329,
-      "lat": 24.8801
+      "lat": 24.8801,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p9",
       "province": "内蒙古",
       "city": "乌海",
       "customer": "鄂尔多斯电冶投资",
@@ -1933,9 +1958,12 @@ const DATA = {
         }
       ],
       "lon": 106.8256,
-      "lat": 39.6737
+      "lat": 39.6737,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p10",
       "province": "内蒙古",
       "city": "鄂尔多斯",
       "customer": "鄂尔多斯水投",
@@ -1970,9 +1998,12 @@ const DATA = {
         }
       ],
       "lon": 109.7813,
-      "lat": 39.6083
+      "lat": 39.6083,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p11",
       "province": "北京",
       "city": "北京",
       "customer": "北京排水集团",
@@ -2083,9 +2114,12 @@ const DATA = {
         }
       ],
       "lon": 116.4074,
-      "lat": 39.9042
+      "lat": 39.9042,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p12",
       "province": "北京",
       "city": "北京",
       "customer": "沈阳光大",
@@ -2120,9 +2154,12 @@ const DATA = {
         }
       ],
       "lon": 116.4074,
-      "lat": 39.9042
+      "lat": 39.9042,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p13",
       "province": "四川",
       "city": "什邡",
       "customer": "国润水务",
@@ -2255,9 +2292,12 @@ const DATA = {
         }
       ],
       "lon": 104.1675,
-      "lat": 31.1268
+      "lat": 31.1268,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p14",
       "province": "四川",
       "city": "内江",
       "customer": "内江水务",
@@ -2325,9 +2365,12 @@ const DATA = {
         }
       ],
       "lon": 105.0584,
-      "lat": 29.5802
+      "lat": 29.5802,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p15",
       "province": "四川",
       "city": "成都",
       "customer": "中建环能",
@@ -2374,9 +2417,12 @@ const DATA = {
         }
       ],
       "lon": 104.0665,
-      "lat": 30.5728
+      "lat": 30.5728,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 4
     },
     {
+      "id": "p16",
       "province": "四川",
       "city": "成都",
       "customer": "崇州天源水务",
@@ -2411,9 +2457,12 @@ const DATA = {
         }
       ],
       "lon": 104.0665,
-      "lat": 30.5728
+      "lat": 30.5728,
+      "cityCustomerIndex": 2,
+      "cityCustomerTotal": 4
     },
     {
+      "id": "p17",
       "province": "四川",
       "city": "成都",
       "customer": "成都排水集团",
@@ -2448,9 +2497,12 @@ const DATA = {
         }
       ],
       "lon": 104.0665,
-      "lat": 30.5728
+      "lat": 30.5728,
+      "cityCustomerIndex": 3,
+      "cityCustomerTotal": 4
     },
     {
+      "id": "p18",
       "province": "四川",
       "city": "成都",
       "customer": "成都环境",
@@ -2508,9 +2560,12 @@ const DATA = {
         }
       ],
       "lon": 104.0665,
-      "lat": 30.5728
+      "lat": 30.5728,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 4
     },
     {
+      "id": "p19",
       "province": "四川",
       "city": "绵阳",
       "customer": "绵阳水务",
@@ -2648,9 +2703,12 @@ const DATA = {
         }
       ],
       "lon": 104.6796,
-      "lat": 31.4675
+      "lat": 31.4675,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p20",
       "province": "安徽",
       "city": "六安",
       "customer": "中国三峡",
@@ -2685,9 +2743,12 @@ const DATA = {
         }
       ],
       "lon": 116.5197,
-      "lat": 31.7359
+      "lat": 31.7359,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p21",
       "province": "安徽",
       "city": "合肥",
       "customer": "合肥市水务环境建设投资有限公司",
@@ -2722,9 +2783,12 @@ const DATA = {
         }
       ],
       "lon": 117.2272,
-      "lat": 31.8206
+      "lat": 31.8206,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 3
     },
     {
+      "id": "p22",
       "province": "安徽",
       "city": "合肥",
       "customer": "合肥水务环境投资有限公司",
@@ -2771,9 +2835,12 @@ const DATA = {
         }
       ],
       "lon": 117.2272,
-      "lat": 31.8206
+      "lat": 31.8206,
+      "cityCustomerIndex": 2,
+      "cityCustomerTotal": 3
     },
     {
+      "id": "p23",
       "province": "安徽",
       "city": "合肥",
       "customer": "柏中环境",
@@ -2808,9 +2875,12 @@ const DATA = {
         }
       ],
       "lon": 117.2272,
-      "lat": 31.8206
+      "lat": 31.8206,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 3
     },
     {
+      "id": "p24",
       "province": "安徽",
       "city": "池州",
       "customer": "池州市排水有限公司",
@@ -2845,9 +2915,12 @@ const DATA = {
         }
       ],
       "lon": 117.4916,
-      "lat": 30.6648
+      "lat": 30.6648,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p25",
       "province": "安徽",
       "city": "池州",
       "customer": "深水池州",
@@ -2882,9 +2955,12 @@ const DATA = {
         }
       ],
       "lon": 117.4916,
-      "lat": 30.6648
+      "lat": 30.6648,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p26",
       "province": "安徽",
       "city": "淮北",
       "customer": "淮北排水",
@@ -2919,9 +2995,12 @@ const DATA = {
         }
       ],
       "lon": 116.7983,
-      "lat": 33.9558
+      "lat": 33.9558,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p27",
       "province": "安徽",
       "city": "芜湖",
       "customer": "中国三峡",
@@ -2956,9 +3035,12 @@ const DATA = {
         }
       ],
       "lon": 118.4331,
-      "lat": 31.3525
+      "lat": 31.3525,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p28",
       "province": "安徽",
       "city": "蚌埠",
       "customer": "中国节能环保",
@@ -2993,9 +3075,12 @@ const DATA = {
         }
       ],
       "lon": 117.3886,
-      "lat": 32.9168
+      "lat": 32.9168,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p29",
       "province": "山东",
       "city": "泰安",
       "customer": "柏中环境",
@@ -3030,9 +3115,12 @@ const DATA = {
         }
       ],
       "lon": 117.0876,
-      "lat": 36.2003
+      "lat": 36.2003,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p30",
       "province": "山东",
       "city": "济南",
       "customer": "光大水务",
@@ -3067,9 +3155,12 @@ const DATA = {
         }
       ],
       "lon": 117.1201,
-      "lat": 36.6512
+      "lat": 36.6512,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 3
     },
     {
+      "id": "p31",
       "province": "山东",
       "city": "济南",
       "customer": "济南先投集团",
@@ -3106,9 +3197,12 @@ const DATA = {
         }
       ],
       "lon": 117.1201,
-      "lat": 36.6512
+      "lat": 36.6512,
+      "cityCustomerIndex": 2,
+      "cityCustomerTotal": 3
     },
     {
+      "id": "p32",
       "province": "山东",
       "city": "济南",
       "customer": "济南水务",
@@ -3143,9 +3237,12 @@ const DATA = {
         }
       ],
       "lon": 117.1201,
-      "lat": 36.6512
+      "lat": 36.6512,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 3
     },
     {
+      "id": "p33",
       "province": "山东",
       "city": "淄博",
       "customer": "光大水务",
@@ -3180,9 +3277,12 @@ const DATA = {
         }
       ],
       "lon": 118.0549,
-      "lat": 36.8135
+      "lat": 36.8135,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p34",
       "province": "山东",
       "city": "滨州",
       "customer": "葛洲坝",
@@ -3217,9 +3317,12 @@ const DATA = {
         }
       ],
       "lon": 117.9707,
-      "lat": 37.3826
+      "lat": 37.3826,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p35",
       "province": "山东",
       "city": "青岛",
       "customer": "青岛城阳市政投资",
@@ -3270,9 +3373,12 @@ const DATA = {
         }
       ],
       "lon": 120.3826,
-      "lat": 36.0671
+      "lat": 36.0671,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p36",
       "province": "山东",
       "city": "青岛",
       "customer": "青岛水务",
@@ -3321,9 +3427,12 @@ const DATA = {
         }
       ],
       "lon": 120.3826,
-      "lat": 36.0671
+      "lat": 36.0671,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p37",
       "province": "山西",
       "city": "临汾",
       "customer": "侯马市建设工程服务中心",
@@ -3360,9 +3469,12 @@ const DATA = {
         }
       ],
       "lon": 111.519,
-      "lat": 36.088
+      "lat": 36.088,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p38",
       "province": "山西",
       "city": "朔州",
       "customer": "朔州市平鲁区新型城镇化建设事务中心",
@@ -3399,9 +3511,12 @@ const DATA = {
         }
       ],
       "lon": 112.4329,
-      "lat": 39.3316
+      "lat": 39.3316,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p39",
       "province": "山西",
       "city": "阳泉",
       "customer": "格盟国际",
@@ -3438,9 +3553,12 @@ const DATA = {
         }
       ],
       "lon": 113.5804,
-      "lat": 37.8567
+      "lat": 37.8567,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p40",
       "province": "广东",
       "city": "东莞",
       "customer": "东莞水务",
@@ -3510,9 +3628,12 @@ const DATA = {
         }
       ],
       "lon": 113.7518,
-      "lat": 23.0207
+      "lat": 23.0207,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p41",
       "province": "广东",
       "city": "东莞",
       "customer": "东莞清源净水",
@@ -3547,9 +3668,12 @@ const DATA = {
         }
       ],
       "lon": 113.7518,
-      "lat": 23.0207
+      "lat": 23.0207,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p42",
       "province": "广东",
       "city": "佛山",
       "customer": "佛山水务环保股份有限公司",
@@ -3668,9 +3792,12 @@ const DATA = {
         }
       ],
       "lon": 113.1214,
-      "lat": 23.0218
+      "lat": 23.0218,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 3
     },
     {
+      "id": "p43",
       "province": "广东",
       "city": "佛山",
       "customer": "佛山顺控",
@@ -3861,9 +3988,12 @@ const DATA = {
         }
       ],
       "lon": 113.1214,
-      "lat": 23.0218
+      "lat": 23.0218,
+      "cityCustomerIndex": 2,
+      "cityCustomerTotal": 3
     },
     {
+      "id": "p44",
       "province": "广东",
       "city": "佛山",
       "customer": "瀚蓝环境股份有限公司",
@@ -4149,9 +4279,12 @@ const DATA = {
         }
       ],
       "lon": 113.1214,
-      "lat": 23.0218
+      "lat": 23.0218,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 3
     },
     {
+      "id": "p45",
       "province": "广东",
       "city": "广州",
       "customer": "增城区东进供水",
@@ -4188,9 +4321,12 @@ const DATA = {
         }
       ],
       "lon": 113.2644,
-      "lat": 23.1291
+      "lat": 23.1291,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 8
     },
     {
+      "id": "p46",
       "province": "广东",
       "city": "广州",
       "customer": "广州净水",
@@ -4225,9 +4361,12 @@ const DATA = {
         }
       ],
       "lon": 113.2644,
-      "lat": 23.1291
+      "lat": 23.1291,
+      "cityCustomerIndex": 2,
+      "cityCustomerTotal": 8
     },
     {
+      "id": "p47",
       "province": "广东",
       "city": "广州",
       "customer": "广州增城城市建设",
@@ -4262,9 +4401,12 @@ const DATA = {
         }
       ],
       "lon": 113.2644,
-      "lat": 23.1291
+      "lat": 23.1291,
+      "cityCustomerIndex": 3,
+      "cityCustomerTotal": 8
     },
     {
+      "id": "p48",
       "province": "广东",
       "city": "广州",
       "customer": "广州市花都排水公司",
@@ -4299,9 +4441,12 @@ const DATA = {
         }
       ],
       "lon": 113.2644,
-      "lat": 23.1291
+      "lat": 23.1291,
+      "cityCustomerIndex": 4,
+      "cityCustomerTotal": 8
     },
     {
+      "id": "p49",
       "province": "广东",
       "city": "广州",
       "customer": "番禺污水治理有限公司",
@@ -4462,9 +4607,12 @@ const DATA = {
         }
       ],
       "lon": 113.2644,
-      "lat": 23.1291
+      "lat": 23.1291,
+      "cityCustomerIndex": 5,
+      "cityCustomerTotal": 8
     },
     {
+      "id": "p50",
       "province": "广东",
       "city": "广州",
       "customer": "科学城（广州）投资集团有限公司",
@@ -4607,9 +4755,12 @@ const DATA = {
         }
       ],
       "lon": 113.2644,
-      "lat": 23.1291
+      "lat": 23.1291,
+      "cityCustomerIndex": 6,
+      "cityCustomerTotal": 8
     },
     {
+      "id": "p51",
       "province": "广东",
       "city": "广州",
       "customer": "花都自来水",
@@ -4668,9 +4819,12 @@ const DATA = {
         }
       ],
       "lon": 113.2644,
-      "lat": 23.1291
+      "lat": 23.1291,
+      "cityCustomerIndex": 7,
+      "cityCustomerTotal": 8
     },
     {
+      "id": "p52",
       "province": "广东",
       "city": "广州",
       "customer": "花都花山净水厂",
@@ -4705,9 +4859,12 @@ const DATA = {
         }
       ],
       "lon": 113.2644,
-      "lat": 23.1291
+      "lat": 23.1291,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 8
     },
     {
+      "id": "p53",
       "province": "广东",
       "city": "梅州",
       "customer": "梅县新城水质净化厂",
@@ -4742,9 +4899,12 @@ const DATA = {
         }
       ],
       "lon": 116.122,
-      "lat": 24.2884
+      "lat": 24.2884,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p54",
       "province": "广东",
       "city": "汕头",
       "customer": "汕头北轴广业",
@@ -4779,9 +4939,12 @@ const DATA = {
         }
       ],
       "lon": 116.6819,
-      "lat": 23.3541
+      "lat": 23.3541,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p55",
       "province": "广东",
       "city": "汕尾",
       "customer": "海丰县广业环保有限公司",
@@ -4816,9 +4979,12 @@ const DATA = {
         }
       ],
       "lon": 115.3753,
-      "lat": 22.7862
+      "lat": 22.7862,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p56",
       "province": "广东",
       "city": "江门",
       "customer": "江西洲展建设有限公司",
@@ -4853,9 +5019,12 @@ const DATA = {
         }
       ],
       "lon": 113.0819,
-      "lat": 22.5787
+      "lat": 22.5787,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p57",
       "province": "广东",
       "city": "深圳",
       "customer": "中国水务",
@@ -4890,9 +5059,12 @@ const DATA = {
         }
       ],
       "lon": 114.0579,
-      "lat": 22.5431
+      "lat": 22.5431,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 9
     },
     {
+      "id": "p58",
       "province": "广东",
       "city": "深圳",
       "customer": "南方水务",
@@ -4927,9 +5099,12 @@ const DATA = {
         }
       ],
       "lon": 114.0579,
-      "lat": 22.5431
+      "lat": 22.5431,
+      "cityCustomerIndex": 2,
+      "cityCustomerTotal": 9
     },
     {
+      "id": "p59",
       "province": "广东",
       "city": "深圳",
       "customer": "深圳中节能可再生能源有限公司",
@@ -4964,9 +5139,12 @@ const DATA = {
         }
       ],
       "lon": 114.0579,
-      "lat": 22.5431
+      "lat": 22.5431,
+      "cityCustomerIndex": 3,
+      "cityCustomerTotal": 9
     },
     {
+      "id": "p60",
       "province": "广东",
       "city": "深圳",
       "customer": "深圳龙华排水",
@@ -5003,9 +5181,12 @@ const DATA = {
         }
       ],
       "lon": 114.0579,
-      "lat": 22.5431
+      "lat": 22.5431,
+      "cityCustomerIndex": 4,
+      "cityCustomerTotal": 9
     },
     {
+      "id": "p61",
       "province": "广东",
       "city": "深圳",
       "customer": "深圳龙岗水务局",
@@ -5040,9 +5221,12 @@ const DATA = {
         }
       ],
       "lon": 114.0579,
-      "lat": 22.5431
+      "lat": 22.5431,
+      "cityCustomerIndex": 5,
+      "cityCustomerTotal": 9
     },
     {
+      "id": "p62",
       "province": "广东",
       "city": "深圳",
       "customer": "深水光明",
@@ -5122,9 +5306,12 @@ const DATA = {
         }
       ],
       "lon": 114.0579,
-      "lat": 22.5431
+      "lat": 22.5431,
+      "cityCustomerIndex": 6,
+      "cityCustomerTotal": 9
     },
     {
+      "id": "p63",
       "province": "广东",
       "city": "深圳",
       "customer": "深水宝安",
@@ -5159,9 +5346,12 @@ const DATA = {
         }
       ],
       "lon": 114.0579,
-      "lat": 22.5431
+      "lat": 22.5431,
+      "cityCustomerIndex": 7,
+      "cityCustomerTotal": 9
     },
     {
+      "id": "p64",
       "province": "广东",
       "city": "深圳",
       "customer": "深水深汕",
@@ -5265,9 +5455,12 @@ const DATA = {
         }
       ],
       "lon": 114.0579,
-      "lat": 22.5431
+      "lat": 22.5431,
+      "cityCustomerIndex": 8,
+      "cityCustomerTotal": 9
     },
     {
+      "id": "p65",
       "province": "广东",
       "city": "深圳",
       "customer": "环水启航",
@@ -5484,9 +5677,12 @@ const DATA = {
         }
       ],
       "lon": 114.0579,
-      "lat": 22.5431
+      "lat": 22.5431,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 9
     },
     {
+      "id": "p66",
       "province": "广东",
       "city": "湛江",
       "customer": "湛江城发集团",
@@ -5523,9 +5719,12 @@ const DATA = {
         }
       ],
       "lon": 110.3594,
-      "lat": 21.2707
+      "lat": 21.2707,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p67",
       "province": "广东",
       "city": "湛江",
       "customer": "湛江城市污水",
@@ -5560,9 +5759,12 @@ const DATA = {
         }
       ],
       "lon": 110.3594,
-      "lat": 21.2707
+      "lat": 21.2707,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p68",
       "province": "广东",
       "city": "潮州",
       "customer": "潮安水务",
@@ -5599,9 +5801,12 @@ const DATA = {
         }
       ],
       "lon": 116.6323,
-      "lat": 23.6618
+      "lat": 23.6618,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p69",
       "province": "广东",
       "city": "珠海",
       "customer": "珠海水务",
@@ -5746,9 +5951,12 @@ const DATA = {
         }
       ],
       "lon": 113.5767,
-      "lat": 22.2707
+      "lat": 22.2707,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p70",
       "province": "广东",
       "city": "肇庆",
       "customer": "肇庆水务",
@@ -5799,9 +6007,12 @@ const DATA = {
         }
       ],
       "lon": 112.465,
-      "lat": 23.0472
+      "lat": 23.0472,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p71",
       "province": "广东",
       "city": "阳江",
       "customer": "阳江水务",
@@ -5838,9 +6049,12 @@ const DATA = {
         }
       ],
       "lon": 111.9822,
-      "lat": 21.8579
+      "lat": 21.8579,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p72",
       "province": "广西",
       "city": "南宁",
       "customer": "博世科",
@@ -5875,9 +6089,12 @@ const DATA = {
         }
       ],
       "lon": 108.3669,
-      "lat": 22.817
+      "lat": 22.817,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p73",
       "province": "广西",
       "city": "南宁",
       "customer": "广西绿城水务",
@@ -5948,9 +6165,12 @@ const DATA = {
         }
       ],
       "lon": 108.3669,
-      "lat": 22.817
+      "lat": 22.817,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p74",
       "province": "广西",
       "city": "来宾",
       "customer": "博世科",
@@ -5985,9 +6205,12 @@ const DATA = {
         }
       ],
       "lon": 109.2215,
-      "lat": 23.7503
+      "lat": 23.7503,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p75",
       "province": "广西",
       "city": "防城港",
       "customer": "广西北投",
@@ -6022,9 +6245,12 @@ const DATA = {
         }
       ],
       "lon": 108.3538,
-      "lat": 21.6869
+      "lat": 21.6869,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p76",
       "province": "江苏",
       "city": "南京",
       "customer": "江宁水务",
@@ -6059,9 +6285,12 @@ const DATA = {
         }
       ],
       "lon": 118.7969,
-      "lat": 32.0603
+      "lat": 32.0603,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p77",
       "province": "江苏",
       "city": "启东",
       "customer": "上海电气",
@@ -6096,9 +6325,12 @@ const DATA = {
         }
       ],
       "lon": 121.6552,
-      "lat": 31.8119
+      "lat": 31.8119,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p78",
       "province": "江苏",
       "city": "如皋",
       "customer": "如皋市水务集团有限公司",
@@ -6133,9 +6365,12 @@ const DATA = {
         }
       ],
       "lon": 120.574,
-      "lat": 32.3716
+      "lat": 32.3716,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p79",
       "province": "江苏",
       "city": "常州",
       "customer": "上海电气",
@@ -6170,9 +6405,12 @@ const DATA = {
         }
       ],
       "lon": 119.9741,
-      "lat": 31.8112
+      "lat": 31.8112,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p80",
       "province": "江苏",
       "city": "张家港",
       "customer": "胜科（中国）投资有限公司",
@@ -6207,9 +6445,12 @@ const DATA = {
         }
       ],
       "lon": 120.5555,
-      "lat": 31.8767
+      "lat": 31.8767,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p81",
       "province": "江苏",
       "city": "无锡",
       "customer": "光大水务",
@@ -6244,9 +6485,12 @@ const DATA = {
         }
       ],
       "lon": 120.3119,
-      "lat": 31.4912
+      "lat": 31.4912,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p82",
       "province": "江苏",
       "city": "淮安",
       "customer": "淮安自来水有限公司",
@@ -6283,9 +6527,12 @@ const DATA = {
         }
       ],
       "lon": 119.0153,
-      "lat": 33.6104
+      "lat": 33.6104,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p83",
       "province": "江苏",
       "city": "苏州",
       "customer": "中联环股份有限公司",
@@ -6320,9 +6567,12 @@ const DATA = {
         }
       ],
       "lon": 120.5853,
-      "lat": 31.2989
+      "lat": 31.2989,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 6
     },
     {
+      "id": "p84",
       "province": "江苏",
       "city": "苏州",
       "customer": "昆山市锦溪污水处理厂",
@@ -6357,9 +6607,12 @@ const DATA = {
         }
       ],
       "lon": 120.5853,
-      "lat": 31.2989
+      "lat": 31.2989,
+      "cityCustomerIndex": 2,
+      "cityCustomerTotal": 6
     },
     {
+      "id": "p85",
       "province": "江苏",
       "city": "苏州",
       "customer": "苏州吴中区木渎镇污水处理有限公司",
@@ -6394,9 +6647,12 @@ const DATA = {
         }
       ],
       "lon": 120.5853,
-      "lat": 31.2989
+      "lat": 31.2989,
+      "cityCustomerIndex": 3,
+      "cityCustomerTotal": 6
     },
     {
+      "id": "p86",
       "province": "江苏",
       "city": "苏州",
       "customer": "苏州工业园区中法环境技术有限公司",
@@ -6431,9 +6687,12 @@ const DATA = {
         }
       ],
       "lon": 120.5853,
-      "lat": 31.2989
+      "lat": 31.2989,
+      "cityCustomerIndex": 4,
+      "cityCustomerTotal": 6
     },
     {
+      "id": "p87",
       "province": "江苏",
       "city": "苏州",
       "customer": "苏州市吴江水务集团有限公司",
@@ -6468,9 +6727,12 @@ const DATA = {
         }
       ],
       "lon": 120.5853,
-      "lat": 31.2989
+      "lat": 31.2989,
+      "cityCustomerIndex": 5,
+      "cityCustomerTotal": 6
     },
     {
+      "id": "p88",
       "province": "江苏",
       "city": "苏州",
       "customer": "苏州市自来水有限公司",
@@ -6517,9 +6779,12 @@ const DATA = {
         }
       ],
       "lon": 120.5853,
-      "lat": 31.2989
+      "lat": 31.2989,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 6
     },
     {
+      "id": "p89",
       "province": "江苏",
       "city": "镇江",
       "customer": "镇江市自来水有限责任公司",
@@ -6566,9 +6831,12 @@ const DATA = {
         }
       ],
       "lon": 119.425,
-      "lat": 32.1896
+      "lat": 32.1896,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p90",
       "province": "江西",
       "city": "九江",
       "customer": "中国三峡",
@@ -6603,9 +6871,12 @@ const DATA = {
         }
       ],
       "lon": 115.9928,
-      "lat": 29.712
+      "lat": 29.712,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p91",
       "province": "江西",
       "city": "南昌",
       "customer": "九江首创利池",
@@ -6640,9 +6911,12 @@ const DATA = {
         }
       ],
       "lon": 115.8582,
-      "lat": 28.682
+      "lat": 28.682,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p92",
       "province": "江西",
       "city": "南昌",
       "customer": "江西水务",
@@ -6679,9 +6953,12 @@ const DATA = {
         }
       ],
       "lon": 115.8582,
-      "lat": 28.682
+      "lat": 28.682,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p93",
       "province": "江西",
       "city": "宜春",
       "customer": "宜春市方科污水处理有限公司",
@@ -6718,9 +6995,12 @@ const DATA = {
         }
       ],
       "lon": 114.4168,
-      "lat": 27.8156
+      "lat": 27.8156,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p94",
       "province": "江西",
       "city": "江西",
       "customer": "江西省华赣环境集团有限公司",
@@ -6767,9 +7047,12 @@ const DATA = {
         }
       ],
       "lon": 115.425,
-      "lat": 27.72
+      "lat": 27.72,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p95",
       "province": "河北",
       "city": "张家口",
       "customer": "张家口鸿泽排水",
@@ -6804,9 +7087,12 @@ const DATA = {
         }
       ],
       "lon": 114.8863,
-      "lat": 40.7675
+      "lat": 40.7675,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p96",
       "province": "河北",
       "city": "雄安",
       "customer": "雄安水务",
@@ -6886,9 +7172,12 @@ const DATA = {
         }
       ],
       "lon": 115.8605,
-      "lat": 39.0427
+      "lat": 39.0427,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p97",
       "province": "河北",
       "city": "高碑店",
       "customer": "荣庭环保",
@@ -6939,9 +7228,12 @@ const DATA = {
         }
       ],
       "lon": 115.8737,
-      "lat": 39.3277
+      "lat": 39.3277,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p98",
       "province": "河南",
       "city": "新乡",
       "customer": "新乡市排水工程有限公司",
@@ -7012,9 +7304,12 @@ const DATA = {
         }
       ],
       "lon": 113.9268,
-      "lat": 35.303
+      "lat": 35.303,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p99",
       "province": "河南",
       "city": "郑州",
       "customer": "中原环保股份有限公司",
@@ -7077,9 +7372,12 @@ const DATA = {
         }
       ],
       "lon": 113.6254,
-      "lat": 34.7466
+      "lat": 34.7466,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p100",
       "province": "河南",
       "city": "郑州",
       "customer": "郑州污水净化",
@@ -7114,9 +7412,12 @@ const DATA = {
         }
       ],
       "lon": 113.6254,
-      "lat": 34.7466
+      "lat": 34.7466,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p101",
       "province": "浙江",
       "city": "东阳",
       "customer": "东阳市自来水有限公司",
@@ -7151,9 +7452,12 @@ const DATA = {
         }
       ],
       "lon": 120.2416,
-      "lat": 29.2894
+      "lat": 29.2894,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p102",
       "province": "浙江",
       "city": "义乌",
       "customer": "义乌市水处理有限责任公司",
@@ -7188,9 +7492,12 @@ const DATA = {
         }
       ],
       "lon": 120.0751,
-      "lat": 29.3068
+      "lat": 29.3068,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p103",
       "province": "浙江",
       "city": "台州",
       "customer": "台州城市水务",
@@ -7225,9 +7532,12 @@ const DATA = {
         }
       ],
       "lon": 121.4208,
-      "lat": 28.6557
+      "lat": 28.6557,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p104",
       "province": "浙江",
       "city": "宁波",
       "customer": "宁波水务",
@@ -7337,9 +7647,12 @@ const DATA = {
         }
       ],
       "lon": 121.55,
-      "lat": 29.875
+      "lat": 29.875,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p105",
       "province": "浙江",
       "city": "宁波",
       "customer": "慈溪水务集团",
@@ -7374,9 +7687,12 @@ const DATA = {
         }
       ],
       "lon": 121.55,
-      "lat": 29.875
+      "lat": 29.875,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p106",
       "province": "浙江",
       "city": "杭州",
       "customer": "杭州市水务集团有限公司",
@@ -7411,9 +7727,12 @@ const DATA = {
         }
       ],
       "lon": 120.1551,
-      "lat": 30.2741
+      "lat": 30.2741,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p107",
       "province": "浙江",
       "city": "桐乡",
       "customer": "桐乡水务集团",
@@ -7467,9 +7786,12 @@ const DATA = {
         }
       ],
       "lon": 120.565,
-      "lat": 30.63
+      "lat": 30.63,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p108",
       "province": "浙江",
       "city": "温州",
       "customer": "温州创源水务",
@@ -7504,9 +7826,12 @@ const DATA = {
         }
       ],
       "lon": 120.6994,
-      "lat": 27.9949
+      "lat": 27.9949,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 3
     },
     {
+      "id": "p109",
       "province": "浙江",
       "city": "温州",
       "customer": "温州杭钢水务有限公司",
@@ -7543,9 +7868,12 @@ const DATA = {
         }
       ],
       "lon": 120.6994,
-      "lat": 27.9949
+      "lat": 27.9949,
+      "cityCustomerIndex": 2,
+      "cityCustomerTotal": 3
     },
     {
+      "id": "p110",
       "province": "浙江",
       "city": "温州",
       "customer": "苍南县河滨污水处理有限公司",
@@ -7580,9 +7908,12 @@ const DATA = {
         }
       ],
       "lon": 120.6994,
-      "lat": 27.9949
+      "lat": 27.9949,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 3
     },
     {
+      "id": "p111",
       "province": "浙江",
       "city": "绍兴",
       "customer": "绍兴柯桥水务集团有限公司",
@@ -7619,9 +7950,12 @@ const DATA = {
         }
       ],
       "lon": 120.5821,
-      "lat": 29.9971
+      "lat": 29.9971,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p112",
       "province": "浙江",
       "city": "金华",
       "customer": "钱江水务",
@@ -7687,9 +8021,12 @@ const DATA = {
         }
       ],
       "lon": 119.6495,
-      "lat": 29.0895
+      "lat": 29.0895,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p113",
       "province": "海南",
       "city": "三亚",
       "customer": "三亚水务",
@@ -7748,9 +8085,12 @@ const DATA = {
         }
       ],
       "lon": 109.5119,
-      "lat": 18.2528
+      "lat": 18.2528,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p114",
       "province": "海南",
       "city": "三亚",
       "customer": "三亚环投",
@@ -7945,9 +8285,12 @@ const DATA = {
         }
       ],
       "lon": 109.5119,
-      "lat": 18.2528
+      "lat": 18.2528,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p115",
       "province": "海南",
       "city": "海口",
       "customer": "海口水务",
@@ -7984,9 +8327,12 @@ const DATA = {
         }
       ],
       "lon": 110.1983,
-      "lat": 20.044
+      "lat": 20.044,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p116",
       "province": "湖北",
       "city": "大冶",
       "customer": "中工武大设计集团有限公司",
@@ -8023,9 +8369,12 @@ const DATA = {
         }
       ],
       "lon": 114.9748,
-      "lat": 30.0988
+      "lat": 30.0988,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p117",
       "province": "湖北",
       "city": "大冶",
       "customer": "大冶市住建局",
@@ -8062,9 +8411,12 @@ const DATA = {
         }
       ],
       "lon": 114.9748,
-      "lat": 30.0988
+      "lat": 30.0988,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p118",
       "province": "湖北",
       "city": "枝江",
       "customer": "枝江市港化集团两美院水厂",
@@ -8099,9 +8451,12 @@ const DATA = {
         }
       ],
       "lon": 111.7605,
-      "lat": 30.4258
+      "lat": 30.4258,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p119",
       "province": "湖北",
       "city": "武汉",
       "customer": "武汉市水务建设工程有限公司",
@@ -8136,9 +8491,12 @@ const DATA = {
         }
       ],
       "lon": 114.3054,
-      "lat": 30.5928
+      "lat": 30.5928,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 3
     },
     {
+      "id": "p120",
       "province": "湖北",
       "city": "武汉",
       "customer": "武汉水务",
@@ -8173,9 +8531,12 @@ const DATA = {
         }
       ],
       "lon": 114.3054,
-      "lat": 30.5928
+      "lat": 30.5928,
+      "cityCustomerIndex": 2,
+      "cityCustomerTotal": 3
     },
     {
+      "id": "p121",
       "province": "湖北",
       "city": "武汉",
       "customer": "武汉车都水务",
@@ -8210,9 +8571,12 @@ const DATA = {
         }
       ],
       "lon": 114.3054,
-      "lat": 30.5928
+      "lat": 30.5928,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 3
     },
     {
+      "id": "p122",
       "province": "湖北",
       "city": "潜江",
       "customer": "潜江市自来水公司",
@@ -8259,9 +8623,12 @@ const DATA = {
         }
       ],
       "lon": 112.8993,
-      "lat": 30.4015
+      "lat": 30.4015,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p123",
       "province": "湖南",
       "city": "长沙",
       "customer": "鑫远环境",
@@ -8296,9 +8663,12 @@ const DATA = {
         }
       ],
       "lon": 112.9388,
-      "lat": 28.2282
+      "lat": 28.2282,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 3
     },
     {
+      "id": "p124",
       "province": "湖南",
       "city": "长沙",
       "customer": "长沙县农村环境建设投资有限公司",
@@ -8357,9 +8727,12 @@ const DATA = {
         }
       ],
       "lon": 112.9388,
-      "lat": 28.2282
+      "lat": 28.2282,
+      "cityCustomerIndex": 2,
+      "cityCustomerTotal": 3
     },
     {
+      "id": "p125",
       "province": "湖南",
       "city": "长沙",
       "customer": "长沙联泰",
@@ -8394,9 +8767,12 @@ const DATA = {
         }
       ],
       "lon": 112.9388,
-      "lat": 28.2282
+      "lat": 28.2282,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 3
     },
     {
+      "id": "p126",
       "province": "福建",
       "city": "泉州",
       "customer": "福建凤竹环保有限公司",
@@ -8431,9 +8807,12 @@ const DATA = {
         }
       ],
       "lon": 118.6757,
-      "lat": 24.8741
+      "lat": 24.8741,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p127",
       "province": "辽宁",
       "city": "沈阳",
       "customer": "国能辽宁环保产业集团有限公司",
@@ -8470,9 +8849,12 @@ const DATA = {
         }
       ],
       "lon": 123.4315,
-      "lat": 41.8057
+      "lat": 41.8057,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p128",
       "province": "辽宁",
       "city": "瓦房店",
       "customer": "瓦房店自来水",
@@ -8507,9 +8889,12 @@ const DATA = {
         }
       ],
       "lon": 121.9795,
-      "lat": 39.6271
+      "lat": 39.6271,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p129",
       "province": "辽宁",
       "city": "盘锦",
       "customer": "柏中环境",
@@ -8544,9 +8929,12 @@ const DATA = {
         }
       ],
       "lon": 122.0707,
-      "lat": 41.1199
+      "lat": 41.1199,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p130",
       "province": "重庆",
       "city": "重庆",
       "customer": "重庆水务",
@@ -8650,9 +9038,12 @@ const DATA = {
         }
       ],
       "lon": 106.5516,
-      "lat": 29.563
+      "lat": 29.563,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p131",
       "province": "陕西",
       "city": "榆林",
       "customer": "中建环能",
@@ -8687,9 +9078,12 @@ const DATA = {
         }
       ],
       "lon": 109.7346,
-      "lat": 38.2852
+      "lat": 38.2852,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
     },
     {
+      "id": "p132",
       "province": "青海",
       "city": "海东",
       "customer": "海东市水务集团",
@@ -8724,9 +9118,12 @@ const DATA = {
         }
       ],
       "lon": 102.1043,
-      "lat": 36.502
+      "lat": 36.502,
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 2
     },
     {
+      "id": "p133",
       "province": "青海",
       "city": "海东",
       "customer": "青海省海东城乡环境综合治理利用亚行贷款项目建设管理办公室",
@@ -8761,7 +9158,9 @@ const DATA = {
         }
       ],
       "lon": 102.1043,
-      "lat": 36.502
+      "lat": 36.502,
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 2
     }
   ]
 };
