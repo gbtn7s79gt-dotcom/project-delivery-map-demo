@@ -136,8 +136,53 @@ def get_tenant_access_token() -> str:
     return data["tenant_access_token"]
 
 
+# 可重试的飞书业务错误码（多为网关/服务端偶发，重试可恢复）
+RETRYABLE_CODES = {
+    1254002,  # Fail（网关偶发失败，无明确参数错误时优先重试）
+    1254001,
+    99991400,  # 网关超时类
+}
+
+
+def _get_with_retry(url: str, headers: dict, params: dict, retries: int = 4) -> dict:
+    """带重试的 GET。
+
+    对网络层异常（超时/连接错）以及飞书网关偶发业务错误码都做重试，
+    返回解析后的 JSON body。连续多次仍失败则抛最后一次异常/业务错误。
+    """
+    import time
+    last_err: Exception | None = None
+    last_data: dict | None = None
+    for attempt in range(1, retries + 1):
+        try:
+            resp = requests.get(url, headers=headers, params=params, timeout=90)
+            resp.raise_for_status()
+            data = resp.json()
+            if data.get("code") in (0, None):
+                return data
+            if data.get("code") in RETRYABLE_CODES:
+                last_data = data
+                if attempt < retries:
+                    time.sleep(2 * attempt)
+                    continue
+                raise RuntimeError(f"读取记录失败(重试{retries}次后仍失败): {data}")
+            # 非可重试业务错误（参数错/无权限等）直接抛出
+            raise RuntimeError(f"读取记录失败: {data}")
+        except Exception as e:  # noqa: BLE001 超时/连接错误等
+            last_err = e
+            if attempt < retries:
+                time.sleep(2 * attempt)
+    if last_data is not None:
+        raise RuntimeError(f"读取记录失败: {last_data}")
+    raise last_err  # type: ignore[misc]
+
+
 def list_records(token: str) -> list[dict[str, Any]]:
-    """分页读取表格全部记录。"""
+    """分页读取表格全部记录。
+
+    注意：该多维表格较大，page_size 使用 500 易触发网关超时/400，
+    故改为 100 + 自动重试，稳定性更高。
+    """
     base_url = (
         f"https://open.feishu.cn/open-apis/bitable/v1/apps/{APP_TOKEN}"
         f"/tables/{TABLE_ID}/records"
@@ -145,16 +190,12 @@ def list_records(token: str) -> list[dict[str, Any]]:
     items: list[dict[str, Any]] = []
     page_token = None
     while True:
-        params: dict[str, Any] = {"page_size": 500}
+        params: dict[str, Any] = {"page_size": 100}
         if page_token:
             params["page_token"] = page_token
-        resp = requests.get(
-            base_url, headers={"Authorization": f"Bearer {token}"}, params=params, timeout=60
+        data = _get_with_retry(
+            base_url, headers={"Authorization": f"Bearer {token}"}, params=params
         )
-        resp.raise_for_status()
-        data = resp.json()
-        if data.get("code") != 0:
-            raise RuntimeError(f"读取记录失败: {data}")
         items.extend(data["data"]["items"])
         if not data["data"].get("has_more"):
             break
@@ -293,6 +334,24 @@ def build_data(records: list[dict[str, Any]], coords: dict[str, list[float]]) ->
 
     # 按省份/城市/客户名排序，保证输出稳定
     customers.sort(key=lambda x: (x["province"], x["city"], x["customer"]))
+
+    # 补 customers 必需字段（渲染逻辑依赖）：
+    #   id                全局唯一（p1..pN），供选中/高亮/聚焦
+    #   cityCustomerIndex 同城客户在圆周上散开的序号（0-based）
+    #   cityCustomerTotal 同城客户总数（>1 时标点沿圆周排列防重叠）
+    _city_totals: dict[tuple[str, str], int] = {}
+    for _c in customers:
+        _ck = (_c["province"], _c["city"])
+        _city_totals[_ck] = _city_totals.get(_ck, 0) + 1
+    _city_seen: dict[tuple[str, str], int] = {}
+    for _i, _c in enumerate(customers):
+        _ck = (_c["province"], _c["city"])
+        _c["id"] = f"p{_i + 1}"
+        _idx = _city_seen.get(_ck, 0)
+        # 与原始 HTML 一致：index = (城市内位置 + 1) mod 城市总数（起始错开一格）
+        _c["cityCustomerIndex"] = (_idx + 1) % _city_totals[_ck]
+        _c["cityCustomerTotal"] = _city_totals[_ck]
+        _city_seen[_ck] = _idx + 1
 
     # 第三步：按城市聚合 -> cities
     city_groups: dict[tuple[str, str], list[dict]] = defaultdict(list)
