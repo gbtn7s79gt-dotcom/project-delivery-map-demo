@@ -2,7 +2,7 @@ const DATA = {
   "source": {
     "sheet": "飞书多维表格"
   },
-  "updatedAt": "2026-09-28T08:25:35.156729+00:00",
+  "updatedAt": "2026-10-05T08:38:31.128913+00:00",
   "summary": {
     "provinces": 23,
     "cities": 81,
