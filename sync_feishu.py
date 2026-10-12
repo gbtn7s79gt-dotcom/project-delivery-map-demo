@@ -3,6 +3,7 @@
 每周从飞书多维表格拉取厂站数据，聚合后生成 data.js。
 部署在 GitHub Actions 中运行；凭据通过环境变量注入，代码中不保留明文。
 """
+import argparse
 import hashlib
 import json
 import os
@@ -40,6 +41,8 @@ COL_KA = "是否KA"
 COL_CAPACITY = "处理规模"
 COL_LON = "经度"
 COL_LAT = "纬度"
+# 备用：若表中用的是飞书原生「地理位置」列，可从中解析 "lng,lat"
+COL_GEO = "地理位置"
 
 # ---------------------------------------------------------------------------
 # 城市坐标字典
@@ -51,6 +54,51 @@ def load_city_coords() -> dict[str, list[float]]:
         data = json.loads(COORDS_PATH.read_text(encoding="utf-8"))
         return {k: [float(v[0]), float(v[1])] for k, v in data.items()}
     return {}
+
+
+# 省份中心坐标（WGS84）——降级兜底用。
+# 当某个新增城市既没有飞书经纬度、coords.json 里也没有时，用省份中心临时落点，
+# 保证每周同步不会因为一个缺坐标的城市而整周失败（旧行为会抛 KeyError 直接中断）。
+PROVINCE_CENTROID: dict[str, list[float]] = {
+    "北京": [116.4074, 39.9042],
+    "天津": [117.2008, 39.0842],
+    "河北": [114.5025, 38.0455],
+    "山西": [112.5492, 37.8570],
+    "内蒙古": [111.7492, 40.8426],
+    "辽宁": [123.4291, 41.7968],
+    "吉林": [125.3245, 43.8868],
+    "黑龙江": [126.6424, 45.7567],
+    "上海": [121.4737, 31.2304],
+    "江苏": [118.7969, 32.0603],
+    "浙江": [120.1536, 30.2875],
+    "安徽": [117.2830, 31.8612],
+    "福建": [119.3062, 26.0745],
+    "江西": [115.8922, 28.6765],
+    "山东": [117.0009, 36.6758],
+    "河南": [113.6654, 34.7580],
+    "湖北": [114.2986, 30.5844],
+    "湖南": [112.9823, 28.1941],
+    "广东": [113.2806, 23.1252],
+    "广西": [108.3200, 22.8240],
+    "海南": [110.3312, 20.0319],
+    "重庆": [106.5049, 29.5332],
+    "四川": [104.0657, 30.6595],
+    "贵州": [106.7135, 26.5783],
+    "云南": [102.7123, 25.0406],
+    "西藏": [91.1322, 29.6604],
+    "陕西": [108.9480, 34.2632],
+    "甘肃": [103.8236, 36.0581],
+    "青海": [101.7782, 36.6232],
+    "宁夏": [106.2782, 38.4664],
+    "新疆": [87.6177, 43.7928],
+    # 中国香港 / 中国澳门 / 中国台湾
+    "香港": [114.1733, 22.3200],
+    "澳门": [113.5490, 22.1987],
+    "台湾": [121.5091, 25.0443],
+}
+
+# 全国兜底中心（兰州附近，中国大陆几何中心）
+NATIONAL_CENTER: list[float] = [103.8236, 36.0581]
 
 
 # ---------------------------------------------------------------------------
@@ -236,8 +284,68 @@ def parse_capacity(val: Any) -> float | None:
         return None
 
 
-def build_data(records: list[dict[str, Any]], coords: dict[str, list[float]]) -> dict[str, Any]:
-    """把飞书记录聚合为页面所需的 DATA 结构。"""
+def _to_float(val: Any) -> float | None:
+    """尽量把单个值转成 float；失败返回 None（不抛异常）。"""
+    if val is None or isinstance(val, bool):
+        return None
+    if isinstance(val, (int, float)):
+        return float(val)
+    if isinstance(val, str):
+        s = val.strip()
+        if not s:
+            return None
+        try:
+            return float(s)
+        except ValueError:
+            return None
+    return None
+
+
+def extract_lonlat(fields: dict[str, Any]) -> tuple[float | None, float | None]:
+    """从一条记录里提取 (经度, 纬度)，取不到则返回 (None, None)。
+
+    优先级：
+      1. 「经度」「纬度」两列（数字或数字字符串）
+      2. 「地理位置」列（飞书原生字段，location 形如 "lng,lat"）
+    """
+    lon = _to_float(fields.get(COL_LON))
+    lat = _to_float(fields.get(COL_LAT))
+    if lon is not None and lat is not None:
+        return lon, lat
+
+    geo = fields.get(COL_GEO)
+    if isinstance(geo, str):
+        geo = {"location": geo}
+    if isinstance(geo, dict):
+        loc = geo.get("location")
+        if isinstance(loc, str) and "," in loc:
+            a, b = (p.strip() for p in loc.split(",", 1))
+            g_lon, g_lat = _to_float(a), _to_float(b)
+            if g_lon is not None and g_lat is not None:
+                return g_lon, g_lat
+    return lon, lat
+
+
+def build_data(
+    records: list[dict[str, Any]],
+    coords: dict[str, list[float]],
+    strict: bool = False,
+    warnings: list[str] | None = None,
+) -> dict[str, Any]:
+    """把飞书记录聚合为页面所需的 DATA 结构。
+
+    strict=True  ：城市缺坐标时直接抛 KeyError（旧行为，便于人工排查）
+    strict=False ：缺坐标时按「省份中心」降级落点并记录告警，避免整周同步失败（默认）
+    warnings     ：传入 list 用于收集告警文本；不传则告警直接打到 stderr
+    """
+    def _warn(msg: str) -> None:
+        if warnings is not None:
+            warnings.append(msg)
+        else:
+            print(f"WARNING: {msg}", file=sys.stderr)
+
+    fallback_cities: set[str] = set()
+
     # 第一步：把每条记录清洗成标准行
     rows = []
     for rec in records:
@@ -253,15 +361,31 @@ def build_data(records: list[dict[str, Any]], coords: dict[str, list[float]]) ->
         is_ka = str(fields.get(COL_KA) or "").strip()
         capacity = parse_capacity(fields.get(COL_CAPACITY))
 
-        # 优先使用飞书表里的经纬度；没有则查城市字典
-        lon = parse_capacity(fields.get(COL_LON))
-        lat = parse_capacity(fields.get(COL_LAT))
+        # 坐标优先级：飞书「经度/纬度」列 →「地理位置」列 → coords.json → 省级中心兜底
+        lon, lat = extract_lonlat(fields)
         if lon is None or lat is None:
             if city in coords:
                 lon, lat = coords[city]
             else:
-                raise KeyError(f"城市 '{city}'（原始值：{fields.get(COL_CITY)!r}）没有可用坐标。"
-                               f"请在飞书表中添加 '经度'、'纬度' 列，或在 coords.json 中补充坐标。")
+                reason = (
+                    f"城市 '{city}'（省份 '{province}'，原始值 {fields.get(COL_CITY)!r}）"
+                    f"没有可用坐标（飞书表无经纬度、coords.json 未收录）"
+                )
+                if strict:
+                    raise KeyError(
+                        f"{reason}。请在飞书表中添加 '经度'、'纬度' 列，"
+                        f"或在 coords.json 中补充坐标。"
+                    )
+                centroid = PROVINCE_CENTROID.get(province)
+                if centroid is None:
+                    centroid = NATIONAL_CENTER
+                    _warn(f"{reason}，且省份 '{province}' 无兜底中心，已临时置于全国中心 {centroid}。"
+                          f"请尽快补充精确坐标。")
+                else:
+                    _warn(f"{reason}，已临时用 {province} 省份中心 {centroid} 兜底。"
+                          f"请尽快补充精确坐标（推荐在飞书表新增『经度』『纬度』列）。")
+                lon, lat = centroid
+                fallback_cities.add(city)
 
         rows.append(
             {
@@ -278,6 +402,12 @@ def build_data(records: list[dict[str, Any]], coords: dict[str, list[float]]) ->
                 "lon": lon,
                 "lat": lat,
             }
+        )
+
+    if fallback_cities:
+        _warn(
+            f"本次共有 {len(fallback_cities)} 个城市使用了兜底坐标（位置仅为近似）："
+            f"{'、'.join(sorted(fallback_cities))}"
         )
 
     # 第二步：按 (customer, city) 聚合 -> customer markers
@@ -488,6 +618,14 @@ def write_data_js(data: dict[str, Any]) -> None:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description="从飞书多维表格同步厂站数据，生成 data.js")
+    parser.add_argument(
+        "--strict",
+        action="store_true",
+        help="城市缺坐标时直接报错（默认改为用省份中心兜底并告警，避免整周同步失败）",
+    )
+    args = parser.parse_args()
+
     print(f"[{datetime.now().isoformat()}] 开始同步飞书数据...")
 
     # 校验凭据
@@ -506,7 +644,15 @@ def main() -> int:
 
     # 数据量骤降保护（防止误删）
     coords = load_city_coords()
-    data = build_data(records, coords)
+    coord_warnings: list[str] = []
+    data = build_data(records, coords, strict=args.strict, warnings=coord_warnings)
+
+    if coord_warnings:
+        print(f"坐标兜底告警 {len(coord_warnings)} 条：", file=sys.stderr)
+        for w in coord_warnings:
+            print(f"  - {w}", file=sys.stderr)
+
+    note = f"coordWarnings={len(coord_warnings)}" if coord_warnings else ""
 
     # 如果 data.js 已存在且哈希相同，跳过推送
     new_hash = data_hash(data)
@@ -521,20 +667,22 @@ def main() -> int:
             old_hash = ""
         if old_hash == new_hash:
             print(f"数据未变更（hash={new_hash}），跳过更新。")
-            _write_log(len(records), new_hash, changed=False)
+            _write_log(len(records), new_hash, changed=False, note=note)
             return 0
 
     write_data_js(data)
-    _write_log(len(records), new_hash, changed=True)
+    _write_log(len(records), new_hash, changed=True, note=note)
     print(f"已生成 {DATA_JS_PATH}，hash={new_hash}")
     print("汇总:", data["summary"])
     return 0
 
 
-def _write_log(record_count: int, data_hash: str, changed: bool) -> None:
+def _write_log(record_count: int, data_hash: str, changed: bool, note: str = "") -> None:
     line = (
         f"{datetime.now(timezone.utc).isoformat()} | records={record_count} | "
-        f"changed={changed} | hash={data_hash}\n"
+        f"changed={changed} | hash={data_hash}"
+        + (f" | {note}" if note else "")
+        + "\n"
     )
     with LAST_SYNC_PATH.open("a", encoding="utf-8") as f:
         f.write(line)
