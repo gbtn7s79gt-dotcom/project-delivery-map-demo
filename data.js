@@ -2,14 +2,14 @@ const DATA = {
   "source": {
     "sheet": "飞书多维表格"
   },
-  "updatedAt": "2026-11-02T09:02:13.588226+00:00",
+  "updatedAt": "2026-11-09T01:42:28.278846+00:00",
   "summary": {
     "provinces": 23,
-    "cities": 82,
+    "cities": 83,
     "clients": 126,
-    "customerMarkers": 135,
-    "plants": 316,
-    "wastewaterPlants": 248,
+    "customerMarkers": 136,
+    "plants": 317,
+    "wastewaterPlants": 249,
     "waterPlants": 68,
     "regions": [
       "东",
@@ -256,19 +256,20 @@ const DATA = {
       "id": "河北",
       "province": "河北",
       "region": "北",
-      "cityCount": 3,
-      "clientCount": 3,
-      "customerMarkerCount": 3,
-      "plantCount": 7,
-      "wastewaterCount": 6,
+      "cityCount": 4,
+      "clientCount": 4,
+      "customerMarkerCount": 4,
+      "plantCount": 8,
+      "wastewaterCount": 7,
       "waterCount": 1,
       "cities": [
         "张家口",
+        "衡水",
         "雄安",
         "高碑店"
       ],
-      "lon": 115.54016666666666,
-      "lat": 39.712633333333336
+      "lon": 115.28075,
+      "lat": 39.29585
     },
     {
       "id": "河南",
@@ -1149,6 +1150,19 @@ const DATA = {
       "waterCount": 0,
       "lon": 114.8863,
       "lat": 40.7675
+    },
+    {
+      "id": "河北-衡水",
+      "province": "河北",
+      "city": "衡水",
+      "region": "北",
+      "clientCount": 1,
+      "customerMarkerCount": 1,
+      "plantCount": 1,
+      "wastewaterCount": 1,
+      "waterCount": 0,
+      "lon": 114.5025,
+      "lat": 38.0455
     },
     {
       "id": "河北-雄安",
@@ -3633,7 +3647,8 @@ const DATA = {
           "name": "东莞松山湖水厂",
           "bidTags": [
             "WP",
-            "APC"
+            "APC",
+            "WB"
           ]
         },
         {
@@ -3671,7 +3686,8 @@ const DATA = {
               "name": "东莞松山湖水厂",
               "bidTags": [
                 "WP",
-                "APC"
+                "APC",
+                "WB"
               ]
             },
             {
@@ -6607,7 +6623,8 @@ const DATA = {
           "name": "淮安城南自来水",
           "bidTags": [
             "WP",
-            "APC"
+            "APC",
+            "WB"
           ]
         }
       ],
@@ -6620,7 +6637,8 @@ const DATA = {
               "name": "淮安城南自来水",
               "bidTags": [
                 "WP",
-                "APC"
+                "APC",
+                "WB"
               ]
             }
           ]
@@ -7194,6 +7212,46 @@ const DATA = {
     },
     {
       "province": "河北",
+      "city": "衡水",
+      "customer": "葛洲坝",
+      "plantTypes": [
+        "污水厂"
+      ],
+      "region": "北",
+      "plantCount": 1,
+      "wastewaterCount": 1,
+      "waterCount": 0,
+      "capacity": 0.0,
+      "stations": [
+        {
+          "name": "安平污水厂",
+          "bidTags": [
+            "APC"
+          ]
+        }
+      ],
+      "plantGroups": [
+        {
+          "type": "污水厂",
+          "count": 1,
+          "stations": [
+            {
+              "name": "安平污水厂",
+              "bidTags": [
+                "APC"
+              ]
+            }
+          ]
+        }
+      ],
+      "lon": 114.5025,
+      "lat": 38.0455,
+      "id": "p97",
+      "cityCustomerIndex": 0,
+      "cityCustomerTotal": 1
+    },
+    {
+      "province": "河北",
       "city": "雄安",
       "customer": "雄安水务",
       "plantTypes": [
@@ -7273,7 +7331,7 @@ const DATA = {
       ],
       "lon": 115.8605,
       "lat": 39.0427,
-      "id": "p97",
+      "id": "p98",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -7329,7 +7387,7 @@ const DATA = {
       ],
       "lon": 115.8737,
       "lat": 39.3277,
-      "id": "p98",
+      "id": "p99",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -7405,7 +7463,7 @@ const DATA = {
       ],
       "lon": 113.9268,
       "lat": 35.303,
-      "id": "p99",
+      "id": "p100",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -7473,7 +7531,7 @@ const DATA = {
       ],
       "lon": 113.6254,
       "lat": 34.7466,
-      "id": "p100",
+      "id": "p101",
       "cityCustomerIndex": 1,
       "cityCustomerTotal": 2
     },
@@ -7513,7 +7571,7 @@ const DATA = {
       ],
       "lon": 113.6254,
       "lat": 34.7466,
-      "id": "p101",
+      "id": "p102",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 2
     },
@@ -7553,7 +7611,7 @@ const DATA = {
       ],
       "lon": 120.2416,
       "lat": 29.2894,
-      "id": "p102",
+      "id": "p103",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -7593,7 +7651,7 @@ const DATA = {
       ],
       "lon": 120.0751,
       "lat": 29.3068,
-      "id": "p103",
+      "id": "p104",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -7633,7 +7691,7 @@ const DATA = {
       ],
       "lon": 121.4208,
       "lat": 28.6557,
-      "id": "p104",
+      "id": "p105",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -7649,13 +7707,14 @@ const DATA = {
       "plantCount": 6,
       "wastewaterCount": 3,
       "waterCount": 3,
-      "capacity": 41.0,
+      "capacity": 167.0,
       "stations": [
         {
           "name": "新周污水厂",
           "bidTags": [
             "APC",
-            "WP"
+            "WP",
+            "WB"
           ]
         },
         {
@@ -7667,21 +7726,24 @@ const DATA = {
         {
           "name": "福明净化水厂",
           "bidTags": [
-            "WP"
+            "WP",
+            "WB"
           ]
         },
         {
           "name": "东钱湖水厂",
           "bidTags": [
             "WP",
-            "APC"
+            "APC",
+            "WB"
           ]
         },
         {
           "name": "桃源水厂",
           "bidTags": [
             "WP",
-            "APC"
+            "APC",
+            "WB"
           ]
         },
         {
@@ -7700,7 +7762,8 @@ const DATA = {
               "name": "新周污水厂",
               "bidTags": [
                 "APC",
-                "WP"
+                "WP",
+                "WB"
               ]
             },
             {
@@ -7712,7 +7775,8 @@ const DATA = {
             {
               "name": "福明净化水厂",
               "bidTags": [
-                "WP"
+                "WP",
+                "WB"
               ]
             }
           ]
@@ -7725,14 +7789,16 @@ const DATA = {
               "name": "东钱湖水厂",
               "bidTags": [
                 "WP",
-                "APC"
+                "APC",
+                "WB"
               ]
             },
             {
               "name": "桃源水厂",
               "bidTags": [
                 "WP",
-                "APC"
+                "APC",
+                "WB"
               ]
             },
             {
@@ -7746,7 +7812,7 @@ const DATA = {
       ],
       "lon": 121.55,
       "lat": 29.875,
-      "id": "p105",
+      "id": "p106",
       "cityCustomerIndex": 1,
       "cityCustomerTotal": 2
     },
@@ -7786,7 +7852,7 @@ const DATA = {
       ],
       "lon": 121.55,
       "lat": 29.875,
-      "id": "p106",
+      "id": "p107",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 2
     },
@@ -7828,7 +7894,7 @@ const DATA = {
       ],
       "lon": 120.1551,
       "lat": 30.2741,
-      "id": "p107",
+      "id": "p108",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -7887,7 +7953,7 @@ const DATA = {
       ],
       "lon": 120.565,
       "lat": 30.63,
-      "id": "p108",
+      "id": "p109",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -7927,7 +7993,7 @@ const DATA = {
       ],
       "lon": 120.6994,
       "lat": 27.9949,
-      "id": "p109",
+      "id": "p110",
       "cityCustomerIndex": 1,
       "cityCustomerTotal": 3
     },
@@ -7969,7 +8035,7 @@ const DATA = {
       ],
       "lon": 120.6994,
       "lat": 27.9949,
-      "id": "p110",
+      "id": "p111",
       "cityCustomerIndex": 2,
       "cityCustomerTotal": 3
     },
@@ -8009,7 +8075,7 @@ const DATA = {
       ],
       "lon": 120.6994,
       "lat": 27.9949,
-      "id": "p111",
+      "id": "p112",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 3
     },
@@ -8051,7 +8117,7 @@ const DATA = {
       ],
       "lon": 120.5821,
       "lat": 29.9971,
-      "id": "p112",
+      "id": "p113",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -8122,7 +8188,7 @@ const DATA = {
       ],
       "lon": 119.6495,
       "lat": 29.0895,
-      "id": "p113",
+      "id": "p114",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -8186,7 +8252,7 @@ const DATA = {
       ],
       "lon": 109.5119,
       "lat": 18.2528,
-      "id": "p114",
+      "id": "p115",
       "cityCustomerIndex": 1,
       "cityCustomerTotal": 2
     },
@@ -8386,7 +8452,7 @@ const DATA = {
       ],
       "lon": 109.5119,
       "lat": 18.2528,
-      "id": "p115",
+      "id": "p116",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 2
     },
@@ -8428,7 +8494,7 @@ const DATA = {
       ],
       "lon": 110.1983,
       "lat": 20.044,
-      "id": "p116",
+      "id": "p117",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -8470,7 +8536,7 @@ const DATA = {
       ],
       "lon": 114.9748,
       "lat": 30.0988,
-      "id": "p117",
+      "id": "p118",
       "cityCustomerIndex": 1,
       "cityCustomerTotal": 2
     },
@@ -8512,7 +8578,7 @@ const DATA = {
       ],
       "lon": 114.9748,
       "lat": 30.0988,
-      "id": "p118",
+      "id": "p119",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 2
     },
@@ -8552,7 +8618,7 @@ const DATA = {
       ],
       "lon": 111.7605,
       "lat": 30.4258,
-      "id": "p119",
+      "id": "p120",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -8592,7 +8658,7 @@ const DATA = {
       ],
       "lon": 114.3054,
       "lat": 30.5928,
-      "id": "p120",
+      "id": "p121",
       "cityCustomerIndex": 1,
       "cityCustomerTotal": 3
     },
@@ -8632,7 +8698,7 @@ const DATA = {
       ],
       "lon": 114.3054,
       "lat": 30.5928,
-      "id": "p121",
+      "id": "p122",
       "cityCustomerIndex": 2,
       "cityCustomerTotal": 3
     },
@@ -8672,7 +8738,7 @@ const DATA = {
       ],
       "lon": 114.3054,
       "lat": 30.5928,
-      "id": "p122",
+      "id": "p123",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 3
     },
@@ -8724,7 +8790,7 @@ const DATA = {
       ],
       "lon": 112.8993,
       "lat": 30.4015,
-      "id": "p123",
+      "id": "p124",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -8764,7 +8830,7 @@ const DATA = {
       ],
       "lon": 112.9388,
       "lat": 28.2282,
-      "id": "p124",
+      "id": "p125",
       "cityCustomerIndex": 1,
       "cityCustomerTotal": 3
     },
@@ -8828,7 +8894,7 @@ const DATA = {
       ],
       "lon": 112.9388,
       "lat": 28.2282,
-      "id": "p125",
+      "id": "p126",
       "cityCustomerIndex": 2,
       "cityCustomerTotal": 3
     },
@@ -8868,7 +8934,7 @@ const DATA = {
       ],
       "lon": 112.9388,
       "lat": 28.2282,
-      "id": "p126",
+      "id": "p127",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 3
     },
@@ -8908,7 +8974,7 @@ const DATA = {
       ],
       "lon": 118.6757,
       "lat": 24.8741,
-      "id": "p127",
+      "id": "p128",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -8950,7 +9016,7 @@ const DATA = {
       ],
       "lon": 121.6147,
       "lat": 38.914,
-      "id": "p128",
+      "id": "p129",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -8992,7 +9058,7 @@ const DATA = {
       ],
       "lon": 123.4315,
       "lat": 41.8057,
-      "id": "p129",
+      "id": "p130",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -9032,7 +9098,7 @@ const DATA = {
       ],
       "lon": 121.9795,
       "lat": 39.6271,
-      "id": "p130",
+      "id": "p131",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -9072,7 +9138,7 @@ const DATA = {
       ],
       "lon": 122.0707,
       "lat": 41.1199,
-      "id": "p131",
+      "id": "p132",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -9181,7 +9247,7 @@ const DATA = {
       ],
       "lon": 106.5516,
       "lat": 29.563,
-      "id": "p132",
+      "id": "p133",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -9221,7 +9287,7 @@ const DATA = {
       ],
       "lon": 109.7346,
       "lat": 38.2852,
-      "id": "p133",
+      "id": "p134",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -9261,7 +9327,7 @@ const DATA = {
       ],
       "lon": 102.1043,
       "lat": 36.502,
-      "id": "p134",
+      "id": "p135",
       "cityCustomerIndex": 1,
       "cityCustomerTotal": 2
     },
@@ -9301,7 +9367,7 @@ const DATA = {
       ],
       "lon": 102.1043,
       "lat": 36.502,
-      "id": "p135",
+      "id": "p136",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 2
     }
