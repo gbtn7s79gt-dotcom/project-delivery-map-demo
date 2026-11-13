@@ -45,6 +45,15 @@ COL_LAT = "纬度"
 COL_GEO = "地理位置"
 
 # ---------------------------------------------------------------------------
+# 中标过滤（业务口径，2026-11-13 起固定）
+# ---------------------------------------------------------------------------
+# 地图只统计「已中标」的厂站，不再按飞书表全量更新：
+#   保留条件：WP中标概率 == 「已中」  或  APC中标概率 == 「已中」
+# 其余取值（'中' / '高' / '低' / 空）一律视为未中标、不进页面。
+# 同一厂站两条产品线都「已中」时只计一次（按记录去重，天然满足）。
+BID_WON = "已中"
+
+# ---------------------------------------------------------------------------
 # 城市坐标字典
 # ---------------------------------------------------------------------------
 
@@ -256,6 +265,48 @@ def list_records(token: str) -> list[dict[str, Any]]:
 # ---------------------------------------------------------------------------
 # 聚合逻辑
 # ---------------------------------------------------------------------------
+
+def cell_text(val: Any) -> str:
+    """把飞书单元格取值归一成纯文本。
+
+    兼容三种形态：
+      - 纯字符串 / 数字（单选、文本列常见）
+      - 富文本数组 [{"text": "已中", "type": "text"}, ...]
+      - 单个 dict {"text": "已中"}
+    """
+    if val is None:
+        return ""
+    if isinstance(val, str):
+        return val.strip()
+    if isinstance(val, (int, float)) and not isinstance(val, bool):
+        return str(val).strip()
+    if isinstance(val, dict):
+        return cell_text(val.get("text") or val.get("name") or val.get("value"))
+    if isinstance(val, list):
+        return "".join(cell_text(v) for v in val).strip()
+    return str(val).strip()
+
+
+def is_won(fields: dict[str, Any]) -> bool:
+    """厂站是否已中标：WP 或 APC 中标概率任一为「已中」。
+
+    这就是地图的收录口径——只有真正中标的厂站才该出现在看板上，
+    潜在客户（'中'/'高'/'低'）不再计入。
+    """
+    return (
+        cell_text(fields.get(COL_WP_BID)) == BID_WON
+        or cell_text(fields.get(COL_APC_BID)) == BID_WON
+    )
+
+
+def filter_won(records: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """按中标口径拆分记录，返回 (保留, 剔除)。"""
+    kept: list[dict[str, Any]] = []
+    dropped: list[dict[str, Any]] = []
+    for rec in records:
+        (kept if is_won(rec.get("fields") or {}) else dropped).append(rec)
+    return kept, dropped
+
 
 def parse_products(field_value: Any) -> list[str]:
     """产品线可能是多选数组或逗号分隔字符串。"""
@@ -545,11 +596,13 @@ def build_data(
         "wastewaterPlants": sum(r["plant_type"] == "污水厂" for r in rows),
         "waterPlants": sum(r["plant_type"] == "自来水厂" for r in rows),
         "regions": sorted({c["region"] for c in customers}),
+        # 收录口径，便于页面/报告核对（前端不渲染该字段）
+        "bidCriteria": "WP中标概率=已中 或 APC中标概率=已中",
     }
 
     return {
         # 页面顶部来源标签使用 source.sheet，需与原始 HTML 兼容（对象含 sheet）
-        "source": {"sheet": "飞书多维表格"},
+        "source": {"sheet": "飞书多维表格（已中标厂站）"},
         "updatedAt": datetime.now(timezone.utc).isoformat(),
         "summary": summary,
         "provinces": provinces,
@@ -607,8 +660,13 @@ def infer_region(city: str, province: str) -> str:
 # ---------------------------------------------------------------------------
 
 def data_hash(data: dict[str, Any]) -> str:
-    """对数据做稳定哈希，用于判断是否有实质变更。"""
-    canonical = json.dumps(data, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    """对数据做稳定哈希，用于判断是否有实质变更。
+
+    注意：updatedAt 是每次运行都会变的时间戳，必须排除，
+    否则哈希永远不同，「数据未变更则跳过」的判断会失效。
+    """
+    payload = {k: v for k, v in data.items() if k != "updatedAt"}
+    canonical = json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
     return hashlib.sha256(canonical.encode("utf-8")).hexdigest()[:16]
 
 
@@ -624,6 +682,11 @@ def main() -> int:
         action="store_true",
         help="城市缺坐标时直接报错（默认改为用省份中心兜底并告警，避免整周同步失败）",
     )
+    parser.add_argument(
+        "--include-all",
+        action="store_true",
+        help="关闭中标过滤，按飞书表全量记录生成（仅供排查对比，正式更新不要用）",
+    )
     args = parser.parse_args()
 
     print(f"[{datetime.now().isoformat()}] 开始同步飞书数据...")
@@ -636,16 +699,39 @@ def main() -> int:
 
     token = get_tenant_access_token()
     records = list_records(token)
-    print(f"读取到 {len(records)} 条记录")
+    raw_count = len(records)
+    print(f"读取到 {raw_count} 条原始记录")
 
-    if len(records) == 0:
+    if raw_count == 0:
         print("飞书返回 0 条记录，中止更新以避免清空页面。", file=sys.stderr)
         return 1
+
+    # 中标过滤：只保留 WP 或 APC 中标概率 =「已中」的厂站
+    if args.include_all:
+        print("⚠️  已指定 --include-all，跳过中标过滤（全量口径）", file=sys.stderr)
+        kept_records, dropped_records = records, []
+    else:
+        kept_records, dropped_records = filter_won(records)
+        print(
+            f"中标过滤：WP/APC 中标概率 =「{BID_WON}」的厂站 {len(kept_records)} 座，"
+            f"剔除未中标 {len(dropped_records)} 座（原始 {raw_count} 座）"
+        )
+        if not kept_records:
+            print("过滤后 0 座厂站，疑似字段口径异常（列名变了？），中止更新。", file=sys.stderr)
+            return 1
+        # 过滤后占比异常保护：中标记录不应低于原始记录的 40%
+        if len(kept_records) < raw_count * 0.4:
+            print(
+                f"过滤后仅剩 {len(kept_records)}/{raw_count} 座，低于 40% 安全线，"
+                f"疑似「WP中标概率/APC中标概率」列名或取值变化，中止更新以便人工确认。",
+                file=sys.stderr,
+            )
+            return 1
 
     # 数据量骤降保护（防止误删）
     coords = load_city_coords()
     coord_warnings: list[str] = []
-    data = build_data(records, coords, strict=args.strict, warnings=coord_warnings)
+    data = build_data(kept_records, coords, strict=args.strict, warnings=coord_warnings)
 
     if coord_warnings:
         print(f"坐标兜底告警 {len(coord_warnings)} 条：", file=sys.stderr)
@@ -667,20 +753,26 @@ def main() -> int:
             old_hash = ""
         if old_hash == new_hash:
             print(f"数据未变更（hash={new_hash}），跳过更新。")
-            _write_log(len(records), new_hash, changed=False, note=note)
+            _write_log(raw_count, len(kept_records), new_hash, changed=False, note=note)
             return 0
 
     write_data_js(data)
-    _write_log(len(records), new_hash, changed=True, note=note)
+    _write_log(raw_count, len(kept_records), new_hash, changed=True, note=note)
     print(f"已生成 {DATA_JS_PATH}，hash={new_hash}")
     print("汇总:", data["summary"])
     return 0
 
 
-def _write_log(record_count: int, data_hash: str, changed: bool, note: str = "") -> None:
+def _write_log(
+    record_count: int,
+    kept_count: int,
+    data_hash: str,
+    changed: bool,
+    note: str = "",
+) -> None:
     line = (
-        f"{datetime.now(timezone.utc).isoformat()} | records={record_count} | "
-        f"changed={changed} | hash={data_hash}"
+        f"{datetime.now(timezone.utc).isoformat()} | raw={record_count} | "
+        f"kept={kept_count} | changed={changed} | hash={data_hash}"
         + (f" | {note}" if note else "")
         + "\n"
     )
