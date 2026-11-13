@@ -1,22 +1,23 @@
 const DATA = {
   "source": {
-    "sheet": "飞书多维表格"
+    "sheet": "飞书多维表格（已中标厂站）"
   },
-  "updatedAt": "2026-11-09T09:23:29.920688+00:00",
+  "updatedAt": "2026-11-13T06:54:08.032027+00:00",
   "summary": {
-    "provinces": 23,
-    "cities": 83,
-    "clients": 126,
-    "customerMarkers": 136,
-    "plants": 317,
-    "wastewaterPlants": 249,
-    "waterPlants": 68,
+    "provinces": 22,
+    "cities": 69,
+    "clients": 100,
+    "customerMarkers": 108,
+    "plants": 252,
+    "wastewaterPlants": 195,
+    "waterPlants": 57,
     "regions": [
       "东",
       "北",
       "南",
       "西"
-    ]
+    ],
+    "bidCriteria": "WP中标概率=已中 或 APC中标概率=已中"
   },
   "provinces": [
     {
@@ -24,10 +25,10 @@ const DATA = {
       "province": "上海",
       "region": "东",
       "cityCount": 1,
-      "clientCount": 6,
-      "customerMarkerCount": 6,
-      "plantCount": 13,
-      "wastewaterCount": 9,
+      "clientCount": 5,
+      "customerMarkerCount": 5,
+      "plantCount": 12,
+      "wastewaterCount": 8,
       "waterCount": 4,
       "cities": [
         "上海"
@@ -89,30 +90,29 @@ const DATA = {
       "id": "四川",
       "province": "四川",
       "region": "西",
-      "cityCount": 4,
-      "clientCount": 7,
-      "customerMarkerCount": 7,
-      "plantCount": 27,
-      "wastewaterCount": 21,
-      "waterCount": 6,
+      "cityCount": 3,
+      "clientCount": 4,
+      "customerMarkerCount": 4,
+      "plantCount": 14,
+      "wastewaterCount": 13,
+      "waterCount": 1,
       "cities": [
         "什邡",
         "内江",
-        "成都",
-        "绵阳"
+        "成都"
       ],
-      "lon": 104.493,
-      "lat": 30.686825
+      "lon": 104.43080000000002,
+      "lat": 30.426599999999997
     },
     {
       "id": "安徽",
       "province": "安徽",
       "region": "东",
       "cityCount": 6,
-      "clientCount": 9,
-      "customerMarkerCount": 9,
-      "plantCount": 10,
-      "wastewaterCount": 9,
+      "clientCount": 7,
+      "customerMarkerCount": 7,
+      "plantCount": 8,
+      "wastewaterCount": 7,
       "waterCount": 1,
       "cities": [
         "六安",
@@ -130,10 +130,10 @@ const DATA = {
       "province": "山东",
       "region": "北",
       "cityCount": 5,
-      "clientCount": 8,
-      "customerMarkerCount": 8,
-      "plantCount": 10,
-      "wastewaterCount": 9,
+      "clientCount": 7,
+      "customerMarkerCount": 7,
+      "plantCount": 7,
+      "wastewaterCount": 6,
       "waterCount": 1,
       "cities": [
         "泰安",
@@ -149,37 +149,35 @@ const DATA = {
       "id": "山西",
       "province": "山西",
       "region": "北",
-      "cityCount": 3,
-      "clientCount": 3,
-      "customerMarkerCount": 3,
-      "plantCount": 3,
-      "wastewaterCount": 3,
+      "cityCount": 2,
+      "clientCount": 2,
+      "customerMarkerCount": 2,
+      "plantCount": 2,
+      "wastewaterCount": 2,
       "waterCount": 0,
       "cities": [
         "临汾",
-        "朔州",
         "阳泉"
       ],
-      "lon": 112.51076666666667,
-      "lat": 37.758766666666666
+      "lon": 112.5497,
+      "lat": 36.97235
     },
     {
       "id": "广东",
       "province": "广东",
       "region": "南",
-      "cityCount": 13,
-      "clientCount": 32,
-      "customerMarkerCount": 32,
-      "plantCount": 131,
-      "wastewaterCount": 106,
-      "waterCount": 25,
+      "cityCount": 12,
+      "clientCount": 28,
+      "customerMarkerCount": 28,
+      "plantCount": 117,
+      "wastewaterCount": 95,
+      "waterCount": 22,
       "cities": [
         "东莞",
         "佛山",
         "广州",
         "梅州",
         "汕头",
-        "汕尾",
         "江门",
         "深圳",
         "湛江",
@@ -188,119 +186,112 @@ const DATA = {
         "肇庆",
         "阳江"
       ],
-      "lon": 113.88247692307692,
-      "lat": 22.833107692307692
+      "lon": 113.758075,
+      "lat": 22.837016666666667
     },
     {
       "id": "广西",
       "province": "广西",
       "region": "南",
-      "cityCount": 3,
-      "clientCount": 4,
-      "customerMarkerCount": 4,
-      "plantCount": 7,
-      "wastewaterCount": 7,
+      "cityCount": 2,
+      "clientCount": 3,
+      "customerMarkerCount": 3,
+      "plantCount": 6,
+      "wastewaterCount": 6,
       "waterCount": 0,
       "cities": [
         "南宁",
-        "来宾",
         "防城港"
       ],
-      "lon": 108.6474,
-      "lat": 22.7514
+      "lon": 108.36035000000001,
+      "lat": 22.25195
     },
     {
       "id": "江苏",
       "province": "江苏",
       "region": "东",
-      "cityCount": 9,
-      "clientCount": 14,
-      "customerMarkerCount": 14,
-      "plantCount": 16,
-      "wastewaterCount": 11,
-      "waterCount": 5,
+      "cityCount": 8,
+      "clientCount": 12,
+      "customerMarkerCount": 12,
+      "plantCount": 12,
+      "wastewaterCount": 9,
+      "waterCount": 3,
       "cities": [
         "南京",
         "启东",
         "如皋",
         "常州",
-        "张家港",
         "无锡",
         "淮安",
         "苏州",
         "镇江"
       ],
-      "lon": 120.09924444444444,
-      "lat": 32.05797777777778
+      "lon": 120.0422125,
+      "lat": 32.0806375
     },
     {
       "id": "江西",
       "province": "江西",
-      "region": "东 / 北 / 南",
-      "cityCount": 4,
-      "clientCount": 5,
-      "customerMarkerCount": 5,
-      "plantCount": 6,
-      "wastewaterCount": 5,
+      "region": "东 / 南",
+      "cityCount": 2,
+      "clientCount": 3,
+      "customerMarkerCount": 3,
+      "plantCount": 3,
+      "wastewaterCount": 2,
       "waterCount": 1,
       "cities": [
         "九江",
-        "南昌",
-        "宜春",
-        "江西"
+        "南昌"
       ],
-      "lon": 115.4232,
-      "lat": 28.4824
+      "lon": 115.9255,
+      "lat": 29.197
     },
     {
       "id": "河北",
       "province": "河北",
       "region": "北",
-      "cityCount": 4,
-      "clientCount": 4,
-      "customerMarkerCount": 4,
-      "plantCount": 8,
-      "wastewaterCount": 7,
+      "cityCount": 3,
+      "clientCount": 3,
+      "customerMarkerCount": 3,
+      "plantCount": 6,
+      "wastewaterCount": 5,
       "waterCount": 1,
       "cities": [
         "张家口",
         "衡水",
-        "雄安",
-        "高碑店"
+        "雄安"
       ],
-      "lon": 115.28075,
-      "lat": 39.29585
+      "lon": 115.0831,
+      "lat": 39.28523333333333
     },
     {
       "id": "河南",
       "province": "河南",
       "region": "北",
-      "cityCount": 2,
-      "clientCount": 3,
-      "customerMarkerCount": 3,
-      "plantCount": 8,
-      "wastewaterCount": 8,
+      "cityCount": 1,
+      "clientCount": 1,
+      "customerMarkerCount": 1,
+      "plantCount": 1,
+      "wastewaterCount": 1,
       "waterCount": 0,
       "cities": [
-        "新乡",
         "郑州"
       ],
-      "lon": 113.7761,
-      "lat": 35.0248
+      "lon": 113.6254,
+      "lat": 34.7466
     },
     {
       "id": "浙江",
       "province": "浙江",
       "region": "东",
-      "cityCount": 9,
-      "clientCount": 12,
-      "customerMarkerCount": 12,
-      "plantCount": 20,
-      "wastewaterCount": 13,
+      "cityCount": 8,
+      "clientCount": 10,
+      "customerMarkerCount": 10,
+      "plantCount": 16,
+      "wastewaterCount": 9,
       "waterCount": 7,
       "cities": [
         "东阳",
-        "义乌",
         "台州",
         "宁波",
         "杭州",
@@ -309,8 +300,8 @@ const DATA = {
         "绍兴",
         "金华"
       ],
-      "lon": 120.54873333333333,
-      "lat": 29.456944444444446
+      "lon": 120.6079375,
+      "lat": 29.4757125
     },
     {
       "id": "海南",
@@ -333,20 +324,18 @@ const DATA = {
       "id": "湖北",
       "province": "湖北",
       "region": "北",
-      "cityCount": 4,
-      "clientCount": 7,
-      "customerMarkerCount": 7,
-      "plantCount": 8,
-      "wastewaterCount": 5,
+      "cityCount": 2,
+      "clientCount": 4,
+      "customerMarkerCount": 4,
+      "plantCount": 4,
+      "wastewaterCount": 1,
       "waterCount": 3,
       "cities": [
-        "大冶",
         "枝江",
-        "武汉",
-        "潜江"
+        "武汉"
       ],
-      "lon": 113.485,
-      "lat": 30.379725
+      "lon": 113.03295,
+      "lat": 30.5093
     },
     {
       "id": "湖南",
@@ -355,8 +344,8 @@ const DATA = {
       "cityCount": 1,
       "clientCount": 3,
       "customerMarkerCount": 3,
-      "plantCount": 5,
-      "wastewaterCount": 5,
+      "plantCount": 3,
+      "wastewaterCount": 3,
       "waterCount": 0,
       "cities": [
         "长沙"
@@ -384,20 +373,19 @@ const DATA = {
       "id": "辽宁",
       "province": "辽宁",
       "region": "北",
-      "cityCount": 4,
-      "clientCount": 4,
-      "customerMarkerCount": 4,
-      "plantCount": 4,
-      "wastewaterCount": 3,
+      "cityCount": 3,
+      "clientCount": 3,
+      "customerMarkerCount": 3,
+      "plantCount": 3,
+      "wastewaterCount": 2,
       "waterCount": 1,
       "cities": [
         "大连",
-        "沈阳",
         "瓦房店",
         "盘锦"
       ],
-      "lon": 122.2741,
-      "lat": 40.366675
+      "lon": 121.8883,
+      "lat": 39.887
     },
     {
       "id": "重庆",
@@ -406,8 +394,8 @@ const DATA = {
       "cityCount": 1,
       "clientCount": 1,
       "customerMarkerCount": 1,
-      "plantCount": 6,
-      "wastewaterCount": 2,
+      "plantCount": 5,
+      "wastewaterCount": 1,
       "waterCount": 4,
       "cities": [
         "重庆"
@@ -416,31 +404,15 @@ const DATA = {
       "lat": 29.563
     },
     {
-      "id": "陕西",
-      "province": "陕西",
+      "id": "青海",
+      "province": "青海",
       "region": "西",
       "cityCount": 1,
       "clientCount": 1,
       "customerMarkerCount": 1,
       "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "cities": [
-        "榆林"
-      ],
-      "lon": 109.7346,
-      "lat": 38.2852
-    },
-    {
-      "id": "青海",
-      "province": "青海",
-      "region": "西",
-      "cityCount": 1,
-      "clientCount": 2,
-      "customerMarkerCount": 2,
-      "plantCount": 2,
       "wastewaterCount": 0,
-      "waterCount": 2,
+      "waterCount": 1,
       "cities": [
         "海东"
       ],
@@ -454,10 +426,10 @@ const DATA = {
       "province": "上海",
       "city": "上海",
       "region": "东",
-      "clientCount": 6,
-      "customerMarkerCount": 6,
-      "plantCount": 13,
-      "wastewaterCount": 9,
+      "clientCount": 5,
+      "customerMarkerCount": 5,
+      "plantCount": 12,
+      "wastewaterCount": 8,
       "waterCount": 4,
       "lon": 121.4737,
       "lat": 31.2304
@@ -558,26 +530,13 @@ const DATA = {
       "province": "四川",
       "city": "成都",
       "region": "西",
-      "clientCount": 4,
-      "customerMarkerCount": 4,
-      "plantCount": 6,
-      "wastewaterCount": 5,
-      "waterCount": 1,
+      "clientCount": 2,
+      "customerMarkerCount": 2,
+      "plantCount": 2,
+      "wastewaterCount": 2,
+      "waterCount": 0,
       "lon": 104.0665,
       "lat": 30.5728
-    },
-    {
-      "id": "四川-绵阳",
-      "province": "四川",
-      "city": "绵阳",
-      "region": "西",
-      "clientCount": 1,
-      "customerMarkerCount": 1,
-      "plantCount": 9,
-      "wastewaterCount": 5,
-      "waterCount": 4,
-      "lon": 104.6796,
-      "lat": 31.4675
     },
     {
       "id": "安徽-六安",
@@ -597,10 +556,10 @@ const DATA = {
       "province": "安徽",
       "city": "合肥",
       "region": "东",
-      "clientCount": 3,
-      "customerMarkerCount": 3,
-      "plantCount": 4,
-      "wastewaterCount": 4,
+      "clientCount": 2,
+      "customerMarkerCount": 2,
+      "plantCount": 3,
+      "wastewaterCount": 3,
       "waterCount": 0,
       "lon": 117.2272,
       "lat": 31.8206
@@ -610,10 +569,10 @@ const DATA = {
       "province": "安徽",
       "city": "池州",
       "region": "东",
-      "clientCount": 2,
-      "customerMarkerCount": 2,
-      "plantCount": 2,
-      "wastewaterCount": 2,
+      "clientCount": 1,
+      "customerMarkerCount": 1,
+      "plantCount": 1,
+      "wastewaterCount": 1,
       "waterCount": 0,
       "lon": 117.4916,
       "lat": 30.6648
@@ -675,10 +634,10 @@ const DATA = {
       "province": "山东",
       "city": "济南",
       "region": "北",
-      "clientCount": 3,
-      "customerMarkerCount": 3,
-      "plantCount": 3,
-      "wastewaterCount": 2,
+      "clientCount": 2,
+      "customerMarkerCount": 2,
+      "plantCount": 2,
+      "wastewaterCount": 1,
       "waterCount": 1,
       "lon": 117.1201,
       "lat": 36.6512
@@ -716,8 +675,8 @@ const DATA = {
       "region": "北",
       "clientCount": 2,
       "customerMarkerCount": 2,
-      "plantCount": 4,
-      "wastewaterCount": 4,
+      "plantCount": 2,
+      "wastewaterCount": 2,
       "waterCount": 0,
       "lon": 120.3826,
       "lat": 36.0671
@@ -734,19 +693,6 @@ const DATA = {
       "waterCount": 0,
       "lon": 111.519,
       "lat": 36.088
-    },
-    {
-      "id": "山西-朔州",
-      "province": "山西",
-      "city": "朔州",
-      "region": "北",
-      "clientCount": 1,
-      "customerMarkerCount": 1,
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "lon": 112.4329,
-      "lat": 39.3316
     },
     {
       "id": "山西-阳泉",
@@ -792,11 +738,11 @@ const DATA = {
       "province": "广东",
       "city": "广州",
       "region": "南",
-      "clientCount": 8,
-      "customerMarkerCount": 8,
-      "plantCount": 29,
+      "clientCount": 7,
+      "customerMarkerCount": 7,
+      "plantCount": 28,
       "wastewaterCount": 25,
-      "waterCount": 4,
+      "waterCount": 3,
       "lon": 113.2644,
       "lat": 23.1291
     },
@@ -827,19 +773,6 @@ const DATA = {
       "lat": 23.3541
     },
     {
-      "id": "广东-汕尾",
-      "province": "广东",
-      "city": "汕尾",
-      "region": "南",
-      "clientCount": 1,
-      "customerMarkerCount": 1,
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "lon": 115.3753,
-      "lat": 22.7862
-    },
-    {
       "id": "广东-江门",
       "province": "广东",
       "city": "江门",
@@ -857,11 +790,11 @@ const DATA = {
       "province": "广东",
       "city": "深圳",
       "region": "南",
-      "clientCount": 9,
-      "customerMarkerCount": 9,
-      "plantCount": 32,
+      "clientCount": 8,
+      "customerMarkerCount": 8,
+      "plantCount": 31,
       "wastewaterCount": 22,
-      "waterCount": 10,
+      "waterCount": 9,
       "lon": 114.0579,
       "lat": 22.5431
     },
@@ -870,10 +803,10 @@ const DATA = {
       "province": "广东",
       "city": "湛江",
       "region": "南",
-      "clientCount": 2,
-      "customerMarkerCount": 2,
-      "plantCount": 2,
-      "wastewaterCount": 2,
+      "clientCount": 1,
+      "customerMarkerCount": 1,
+      "plantCount": 1,
+      "wastewaterCount": 1,
       "waterCount": 0,
       "lon": 110.3594,
       "lat": 21.2707
@@ -898,8 +831,8 @@ const DATA = {
       "region": "南",
       "clientCount": 1,
       "customerMarkerCount": 1,
-      "plantCount": 13,
-      "wastewaterCount": 10,
+      "plantCount": 4,
+      "wastewaterCount": 1,
       "waterCount": 3,
       "lon": 113.5767,
       "lat": 22.2707
@@ -911,9 +844,9 @@ const DATA = {
       "region": "南",
       "clientCount": 1,
       "customerMarkerCount": 1,
-      "plantCount": 2,
+      "plantCount": 1,
       "wastewaterCount": 0,
-      "waterCount": 2,
+      "waterCount": 1,
       "lon": 112.465,
       "lat": 23.0472
     },
@@ -942,19 +875,6 @@ const DATA = {
       "waterCount": 0,
       "lon": 108.3669,
       "lat": 22.817
-    },
-    {
-      "id": "广西-来宾",
-      "province": "广西",
-      "city": "来宾",
-      "region": "南",
-      "clientCount": 1,
-      "customerMarkerCount": 1,
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "lon": 109.2215,
-      "lat": 23.7503
     },
     {
       "id": "广西-防城港",
@@ -1022,19 +942,6 @@ const DATA = {
       "lat": 31.8112
     },
     {
-      "id": "江苏-张家港",
-      "province": "江苏",
-      "city": "张家港",
-      "region": "东",
-      "clientCount": 1,
-      "customerMarkerCount": 1,
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "lon": 120.5555,
-      "lat": 31.8767
-    },
-    {
       "id": "江苏-无锡",
       "province": "江苏",
       "city": "无锡",
@@ -1065,11 +972,11 @@ const DATA = {
       "province": "江苏",
       "city": "苏州",
       "region": "东",
-      "clientCount": 6,
-      "customerMarkerCount": 6,
-      "plantCount": 7,
-      "wastewaterCount": 5,
-      "waterCount": 2,
+      "clientCount": 5,
+      "customerMarkerCount": 5,
+      "plantCount": 5,
+      "wastewaterCount": 4,
+      "waterCount": 1,
       "lon": 120.5853,
       "lat": 31.2989
     },
@@ -1080,9 +987,9 @@ const DATA = {
       "region": "东",
       "clientCount": 1,
       "customerMarkerCount": 1,
-      "plantCount": 2,
+      "plantCount": 1,
       "wastewaterCount": 0,
-      "waterCount": 2,
+      "waterCount": 1,
       "lon": 119.425,
       "lat": 32.1896
     },
@@ -1111,32 +1018,6 @@ const DATA = {
       "waterCount": 1,
       "lon": 115.8582,
       "lat": 28.682
-    },
-    {
-      "id": "江西-宜春",
-      "province": "江西",
-      "city": "宜春",
-      "region": "北",
-      "clientCount": 1,
-      "customerMarkerCount": 1,
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "lon": 114.4168,
-      "lat": 27.8156
-    },
-    {
-      "id": "江西-江西",
-      "province": "江西",
-      "city": "江西",
-      "region": "东",
-      "clientCount": 1,
-      "customerMarkerCount": 1,
-      "plantCount": 2,
-      "wastewaterCount": 2,
-      "waterCount": 0,
-      "lon": 115.425,
-      "lat": 27.72
     },
     {
       "id": "河北-张家口",
@@ -1178,40 +1059,14 @@ const DATA = {
       "lat": 39.0427
     },
     {
-      "id": "河北-高碑店",
-      "province": "河北",
-      "city": "高碑店",
-      "region": "北",
-      "clientCount": 1,
-      "customerMarkerCount": 1,
-      "plantCount": 2,
-      "wastewaterCount": 2,
-      "waterCount": 0,
-      "lon": 115.8737,
-      "lat": 39.3277
-    },
-    {
-      "id": "河南-新乡",
-      "province": "河南",
-      "city": "新乡",
-      "region": "北",
-      "clientCount": 1,
-      "customerMarkerCount": 1,
-      "plantCount": 4,
-      "wastewaterCount": 4,
-      "waterCount": 0,
-      "lon": 113.9268,
-      "lat": 35.303
-    },
-    {
       "id": "河南-郑州",
       "province": "河南",
       "city": "郑州",
       "region": "北",
-      "clientCount": 2,
-      "customerMarkerCount": 2,
-      "plantCount": 4,
-      "wastewaterCount": 4,
+      "clientCount": 1,
+      "customerMarkerCount": 1,
+      "plantCount": 1,
+      "wastewaterCount": 1,
       "waterCount": 0,
       "lon": 113.6254,
       "lat": 34.7466
@@ -1228,19 +1083,6 @@ const DATA = {
       "waterCount": 1,
       "lon": 120.2416,
       "lat": 29.2894
-    },
-    {
-      "id": "浙江-义乌",
-      "province": "浙江",
-      "city": "义乌",
-      "region": "东",
-      "clientCount": 1,
-      "customerMarkerCount": 1,
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "lon": 120.0751,
-      "lat": 29.3068
     },
     {
       "id": "浙江-台州",
@@ -1288,8 +1130,8 @@ const DATA = {
       "region": "东",
       "clientCount": 1,
       "customerMarkerCount": 1,
-      "plantCount": 2,
-      "wastewaterCount": 1,
+      "plantCount": 1,
+      "wastewaterCount": 0,
       "waterCount": 1,
       "lon": 120.565,
       "lat": 30.63
@@ -1299,10 +1141,10 @@ const DATA = {
       "province": "浙江",
       "city": "温州",
       "region": "东",
-      "clientCount": 3,
-      "customerMarkerCount": 3,
-      "plantCount": 3,
-      "wastewaterCount": 3,
+      "clientCount": 2,
+      "customerMarkerCount": 2,
+      "plantCount": 2,
+      "wastewaterCount": 2,
       "waterCount": 0,
       "lon": 120.6994,
       "lat": 27.9949
@@ -1327,8 +1169,8 @@ const DATA = {
       "region": "东",
       "clientCount": 1,
       "customerMarkerCount": 1,
-      "plantCount": 3,
-      "wastewaterCount": 2,
+      "plantCount": 2,
+      "wastewaterCount": 1,
       "waterCount": 1,
       "lon": 119.6495,
       "lat": 29.0895
@@ -1360,19 +1202,6 @@ const DATA = {
       "lat": 20.044
     },
     {
-      "id": "湖北-大冶",
-      "province": "湖北",
-      "city": "大冶",
-      "region": "北",
-      "clientCount": 2,
-      "customerMarkerCount": 2,
-      "plantCount": 2,
-      "wastewaterCount": 2,
-      "waterCount": 0,
-      "lon": 114.9748,
-      "lat": 30.0988
-    },
-    {
       "id": "湖北-枝江",
       "province": "湖北",
       "city": "枝江",
@@ -1399,27 +1228,14 @@ const DATA = {
       "lat": 30.5928
     },
     {
-      "id": "湖北-潜江",
-      "province": "湖北",
-      "city": "潜江",
-      "region": "北",
-      "clientCount": 1,
-      "customerMarkerCount": 1,
-      "plantCount": 2,
-      "wastewaterCount": 2,
-      "waterCount": 0,
-      "lon": 112.8993,
-      "lat": 30.4015
-    },
-    {
       "id": "湖南-长沙",
       "province": "湖南",
       "city": "长沙",
       "region": "南",
       "clientCount": 3,
       "customerMarkerCount": 3,
-      "plantCount": 5,
-      "wastewaterCount": 5,
+      "plantCount": 3,
+      "wastewaterCount": 3,
       "waterCount": 0,
       "lon": 112.9388,
       "lat": 28.2282
@@ -1449,19 +1265,6 @@ const DATA = {
       "waterCount": 0,
       "lon": 121.6147,
       "lat": 38.914
-    },
-    {
-      "id": "辽宁-沈阳",
-      "province": "辽宁",
-      "city": "沈阳",
-      "region": "北",
-      "clientCount": 1,
-      "customerMarkerCount": 1,
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "lon": 123.4315,
-      "lat": 41.8057
     },
     {
       "id": "辽宁-瓦房店",
@@ -1496,35 +1299,22 @@ const DATA = {
       "region": "西",
       "clientCount": 1,
       "customerMarkerCount": 1,
-      "plantCount": 6,
-      "wastewaterCount": 2,
+      "plantCount": 5,
+      "wastewaterCount": 1,
       "waterCount": 4,
       "lon": 106.5516,
       "lat": 29.563
-    },
-    {
-      "id": "陕西-榆林",
-      "province": "陕西",
-      "city": "榆林",
-      "region": "西",
-      "clientCount": 1,
-      "customerMarkerCount": 1,
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "lon": 109.7346,
-      "lat": 38.2852
     },
     {
       "id": "青海-海东",
       "province": "青海",
       "city": "海东",
       "region": "西",
-      "clientCount": 2,
-      "customerMarkerCount": 2,
-      "plantCount": 2,
+      "clientCount": 1,
+      "customerMarkerCount": 1,
+      "plantCount": 1,
       "wastewaterCount": 0,
-      "waterCount": 2,
+      "waterCount": 1,
       "lon": 102.1043,
       "lat": 36.502
     }
@@ -1611,7 +1401,7 @@ const DATA = {
       "lat": 31.2304,
       "id": "p1",
       "cityCustomerIndex": 1,
-      "cityCustomerTotal": 6
+      "cityCustomerTotal": 5
     },
     {
       "province": "上海",
@@ -1651,7 +1441,7 @@ const DATA = {
       "lat": 31.2304,
       "id": "p2",
       "cityCustomerIndex": 2,
-      "cityCustomerTotal": 6
+      "cityCustomerTotal": 5
     },
     {
       "province": "上海",
@@ -1691,47 +1481,7 @@ const DATA = {
       "lat": 31.2304,
       "id": "p3",
       "cityCustomerIndex": 3,
-      "cityCustomerTotal": 6
-    },
-    {
-      "province": "上海",
-      "city": "上海",
-      "customer": "上海泓济环保科技股份有限公司",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "东",
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "capacity": 4.0,
-      "stations": [
-        {
-          "name": "奎屯水厂",
-          "bidTags": [
-            "APC"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "奎屯水厂",
-              "bidTags": [
-                "APC"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 121.4737,
-      "lat": 31.2304,
-      "id": "p4",
-      "cityCustomerIndex": 4,
-      "cityCustomerTotal": 6
+      "cityCustomerTotal": 5
     },
     {
       "province": "上海",
@@ -1769,9 +1519,9 @@ const DATA = {
       ],
       "lon": 121.4737,
       "lat": 31.2304,
-      "id": "p5",
-      "cityCustomerIndex": 5,
-      "cityCustomerTotal": 6
+      "id": "p4",
+      "cityCustomerIndex": 4,
+      "cityCustomerTotal": 5
     },
     {
       "province": "上海",
@@ -1866,9 +1616,9 @@ const DATA = {
       ],
       "lon": 121.4737,
       "lat": 31.2304,
-      "id": "p6",
+      "id": "p5",
       "cityCustomerIndex": 0,
-      "cityCustomerTotal": 6
+      "cityCustomerTotal": 5
     },
     {
       "province": "云南",
@@ -1906,7 +1656,7 @@ const DATA = {
       ],
       "lon": 104.104,
       "lat": 26.219,
-      "id": "p7",
+      "id": "p6",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -1946,7 +1696,7 @@ const DATA = {
       ],
       "lon": 102.8329,
       "lat": 24.8801,
-      "id": "p8",
+      "id": "p7",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -1986,7 +1736,7 @@ const DATA = {
       ],
       "lon": 106.8256,
       "lat": 39.6737,
-      "id": "p9",
+      "id": "p8",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -2026,7 +1776,7 @@ const DATA = {
       ],
       "lon": 109.7813,
       "lat": 39.6083,
-      "id": "p10",
+      "id": "p9",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -2068,7 +1818,7 @@ const DATA = {
       ],
       "lon": 116.4074,
       "lat": 39.9042,
-      "id": "p11",
+      "id": "p10",
       "cityCustomerIndex": 1,
       "cityCustomerTotal": 3
     },
@@ -2184,7 +1934,7 @@ const DATA = {
       ],
       "lon": 116.4074,
       "lat": 39.9042,
-      "id": "p12",
+      "id": "p11",
       "cityCustomerIndex": 2,
       "cityCustomerTotal": 3
     },
@@ -2224,7 +1974,7 @@ const DATA = {
       ],
       "lon": 116.4074,
       "lat": 39.9042,
-      "id": "p13",
+      "id": "p12",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 3
     },
@@ -2362,7 +2112,7 @@ const DATA = {
       ],
       "lon": 104.1675,
       "lat": 31.1268,
-      "id": "p14",
+      "id": "p13",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -2437,61 +2187,9 @@ const DATA = {
       ],
       "lon": 105.0584,
       "lat": 29.5802,
-      "id": "p15",
+      "id": "p14",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
-    },
-    {
-      "province": "四川",
-      "city": "成都",
-      "customer": "中建环能",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "西",
-      "plantCount": 2,
-      "wastewaterCount": 2,
-      "waterCount": 0,
-      "capacity": 0.0,
-      "stations": [
-        {
-          "name": "大邑污水厂（SAAS）",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "金堂污水厂（SAAS）",
-          "bidTags": [
-            "WP"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 2,
-          "stations": [
-            {
-              "name": "大邑污水厂（SAAS）",
-              "bidTags": [
-                "WP"
-              ]
-            },
-            {
-              "name": "金堂污水厂（SAAS）",
-              "bidTags": [
-                "WP"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 104.0665,
-      "lat": 30.5728,
-      "id": "p16",
-      "cityCustomerIndex": 1,
-      "cityCustomerTotal": 4
     },
     {
       "province": "四川",
@@ -2529,9 +2227,9 @@ const DATA = {
       ],
       "lon": 104.0665,
       "lat": 30.5728,
-      "id": "p17",
-      "cityCustomerIndex": 2,
-      "cityCustomerTotal": 4
+      "id": "p15",
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 2
     },
     {
       "province": "四川",
@@ -2569,215 +2267,9 @@ const DATA = {
       ],
       "lon": 104.0665,
       "lat": 30.5728,
-      "id": "p18",
-      "cityCustomerIndex": 3,
-      "cityCustomerTotal": 4
-    },
-    {
-      "province": "四川",
-      "city": "成都",
-      "customer": "成都环境",
-      "plantTypes": [
-        "污水厂",
-        "自来水厂"
-      ],
-      "region": "西",
-      "plantCount": 2,
-      "wastewaterCount": 1,
-      "waterCount": 1,
-      "capacity": 90.0,
-      "stations": [
-        {
-          "name": "成都第六净水厂",
-          "bidTags": [
-            "WP",
-            "APC"
-          ]
-        },
-        {
-          "name": "成都自来水7厂3期",
-          "bidTags": [
-            "WP",
-            "APC"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "成都第六净水厂",
-              "bidTags": [
-                "WP",
-                "APC"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "自来水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "成都自来水7厂3期",
-              "bidTags": [
-                "WP",
-                "APC"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 104.0665,
-      "lat": 30.5728,
-      "id": "p19",
+      "id": "p16",
       "cityCustomerIndex": 0,
-      "cityCustomerTotal": 4
-    },
-    {
-      "province": "四川",
-      "city": "绵阳",
-      "customer": "绵阳水务",
-      "plantTypes": [
-        "污水厂",
-        "自来水厂"
-      ],
-      "region": "西",
-      "plantCount": 9,
-      "wastewaterCount": 5,
-      "waterCount": 4,
-      "capacity": 0.0,
-      "stations": [
-        {
-          "name": "塘汛污水厂",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "永兴污水厂",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "七星坝污水处理厂",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "小枧污水厂（塘汛管理）",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "丰谷污水厂（塘汛管理）",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "绵阳第二水厂",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "绵阳第三水厂",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "燕儿河水厂",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "开茂水厂",
-          "bidTags": [
-            "WP"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 5,
-          "stations": [
-            {
-              "name": "塘汛污水厂",
-              "bidTags": [
-                "WP"
-              ]
-            },
-            {
-              "name": "永兴污水厂",
-              "bidTags": [
-                "WP"
-              ]
-            },
-            {
-              "name": "七星坝污水处理厂",
-              "bidTags": [
-                "WP"
-              ]
-            },
-            {
-              "name": "小枧污水厂（塘汛管理）",
-              "bidTags": [
-                "WP"
-              ]
-            },
-            {
-              "name": "丰谷污水厂（塘汛管理）",
-              "bidTags": [
-                "WP"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "自来水厂",
-          "count": 4,
-          "stations": [
-            {
-              "name": "绵阳第二水厂",
-              "bidTags": [
-                "WP"
-              ]
-            },
-            {
-              "name": "绵阳第三水厂",
-              "bidTags": [
-                "WP"
-              ]
-            },
-            {
-              "name": "燕儿河水厂",
-              "bidTags": [
-                "WP"
-              ]
-            },
-            {
-              "name": "开茂水厂",
-              "bidTags": [
-                "WP"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 104.6796,
-      "lat": 31.4675,
-      "id": "p20",
-      "cityCustomerIndex": 0,
-      "cityCustomerTotal": 1
+      "cityCustomerTotal": 2
     },
     {
       "province": "安徽",
@@ -2815,49 +2307,9 @@ const DATA = {
       ],
       "lon": 116.5197,
       "lat": 31.7359,
-      "id": "p21",
+      "id": "p17",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
-    },
-    {
-      "province": "安徽",
-      "city": "合肥",
-      "customer": "合肥市水务环境建设投资有限公司",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "东",
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "capacity": 20.0,
-      "stations": [
-        {
-          "name": "小仓房",
-          "bidTags": [
-            "APC"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "小仓房",
-              "bidTags": [
-                "APC"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 117.2272,
-      "lat": 31.8206,
-      "id": "p22",
-      "cityCustomerIndex": 1,
-      "cityCustomerTotal": 3
     },
     {
       "province": "安徽",
@@ -2907,9 +2359,9 @@ const DATA = {
       ],
       "lon": 117.2272,
       "lat": 31.8206,
-      "id": "p23",
-      "cityCustomerIndex": 2,
-      "cityCustomerTotal": 3
+      "id": "p18",
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 2
     },
     {
       "province": "安徽",
@@ -2947,48 +2399,8 @@ const DATA = {
       ],
       "lon": 117.2272,
       "lat": 31.8206,
-      "id": "p24",
+      "id": "p19",
       "cityCustomerIndex": 0,
-      "cityCustomerTotal": 3
-    },
-    {
-      "province": "安徽",
-      "city": "池州",
-      "customer": "池州市排水有限公司",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "东",
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "capacity": 2.0,
-      "stations": [
-        {
-          "name": "池州城东二期污水处理厂",
-          "bidTags": [
-            "WP"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "池州城东二期污水处理厂",
-              "bidTags": [
-                "WP"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 117.4916,
-      "lat": 30.6648,
-      "id": "p25",
-      "cityCustomerIndex": 1,
       "cityCustomerTotal": 2
     },
     {
@@ -3027,9 +2439,9 @@ const DATA = {
       ],
       "lon": 117.4916,
       "lat": 30.6648,
-      "id": "p26",
+      "id": "p20",
       "cityCustomerIndex": 0,
-      "cityCustomerTotal": 2
+      "cityCustomerTotal": 1
     },
     {
       "province": "安徽",
@@ -3067,7 +2479,7 @@ const DATA = {
       ],
       "lon": 116.7983,
       "lat": 33.9558,
-      "id": "p27",
+      "id": "p21",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -3107,7 +2519,7 @@ const DATA = {
       ],
       "lon": 118.4331,
       "lat": 31.3525,
-      "id": "p28",
+      "id": "p22",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -3147,7 +2559,7 @@ const DATA = {
       ],
       "lon": 117.3886,
       "lat": 32.9168,
-      "id": "p29",
+      "id": "p23",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -3187,7 +2599,7 @@ const DATA = {
       ],
       "lon": 117.0876,
       "lat": 36.2003,
-      "id": "p30",
+      "id": "p24",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -3227,51 +2639,9 @@ const DATA = {
       ],
       "lon": 117.1201,
       "lat": 36.6512,
-      "id": "p31",
+      "id": "p25",
       "cityCustomerIndex": 1,
-      "cityCustomerTotal": 3
-    },
-    {
-      "province": "山东",
-      "city": "济南",
-      "customer": "济南先投集团",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "北",
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "capacity": 4.0,
-      "stations": [
-        {
-          "name": "济南起步孙耿污水厂",
-          "bidTags": [
-            "WP",
-            "APC"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "济南起步孙耿污水厂",
-              "bidTags": [
-                "WP",
-                "APC"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 117.1201,
-      "lat": 36.6512,
-      "id": "p32",
-      "cityCustomerIndex": 2,
-      "cityCustomerTotal": 3
+      "cityCustomerTotal": 2
     },
     {
       "province": "山东",
@@ -3309,9 +2679,9 @@ const DATA = {
       ],
       "lon": 117.1201,
       "lat": 36.6512,
-      "id": "p33",
+      "id": "p26",
       "cityCustomerIndex": 0,
-      "cityCustomerTotal": 3
+      "cityCustomerTotal": 2
     },
     {
       "province": "山东",
@@ -3349,7 +2719,7 @@ const DATA = {
       ],
       "lon": 118.0549,
       "lat": 36.8135,
-      "id": "p34",
+      "id": "p27",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -3389,7 +2759,7 @@ const DATA = {
       ],
       "lon": 117.9707,
       "lat": 37.3826,
-      "id": "p35",
+      "id": "p28",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -3401,10 +2771,10 @@ const DATA = {
         "污水厂"
       ],
       "region": "北",
-      "plantCount": 2,
-      "wastewaterCount": 2,
+      "plantCount": 1,
+      "wastewaterCount": 1,
       "waterCount": 0,
-      "capacity": 23.0,
+      "capacity": 20.0,
       "stations": [
         {
           "name": "青岛城阳污水厂四期",
@@ -3412,19 +2782,12 @@ const DATA = {
             "APC",
             "WP"
           ]
-        },
-        {
-          "name": "红岛污水厂",
-          "bidTags": [
-            "WP",
-            "APC"
-          ]
         }
       ],
       "plantGroups": [
         {
           "type": "污水厂",
-          "count": 2,
+          "count": 1,
           "stations": [
             {
               "name": "青岛城阳污水厂四期",
@@ -3432,20 +2795,13 @@ const DATA = {
                 "APC",
                 "WP"
               ]
-            },
-            {
-              "name": "红岛污水厂",
-              "bidTags": [
-                "WP",
-                "APC"
-              ]
             }
           ]
         }
       ],
       "lon": 120.3826,
       "lat": 36.0671,
-      "id": "p36",
+      "id": "p29",
       "cityCustomerIndex": 1,
       "cityCustomerTotal": 2
     },
@@ -3457,41 +2813,27 @@ const DATA = {
         "污水厂"
       ],
       "region": "北",
-      "plantCount": 2,
-      "wastewaterCount": 2,
+      "plantCount": 1,
+      "wastewaterCount": 1,
       "waterCount": 0,
-      "capacity": 20.0,
+      "capacity": 15.0,
       "stations": [
         {
           "name": "青岛娄山河污水厂",
           "bidTags": [
             "WP"
           ]
-        },
-        {
-          "name": "张村河水厂二期",
-          "bidTags": [
-            "WP",
-            "APC"
-          ]
         }
       ],
       "plantGroups": [
         {
           "type": "污水厂",
-          "count": 2,
+          "count": 1,
           "stations": [
             {
               "name": "青岛娄山河污水厂",
               "bidTags": [
                 "WP"
-              ]
-            },
-            {
-              "name": "张村河水厂二期",
-              "bidTags": [
-                "WP",
-                "APC"
               ]
             }
           ]
@@ -3499,7 +2841,7 @@ const DATA = {
       ],
       "lon": 120.3826,
       "lat": 36.0671,
-      "id": "p37",
+      "id": "p30",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 2
     },
@@ -3541,49 +2883,7 @@ const DATA = {
       ],
       "lon": 111.519,
       "lat": 36.088,
-      "id": "p38",
-      "cityCustomerIndex": 0,
-      "cityCustomerTotal": 1
-    },
-    {
-      "province": "山西",
-      "city": "朔州",
-      "customer": "朔州市平鲁区新型城镇化建设事务中心",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "北",
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "capacity": 2.0,
-      "stations": [
-        {
-          "name": "山西省朔州市平鲁区污水处理厂",
-          "bidTags": [
-            "WP",
-            "APC"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "山西省朔州市平鲁区污水处理厂",
-              "bidTags": [
-                "WP",
-                "APC"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 112.4329,
-      "lat": 39.3316,
-      "id": "p39",
+      "id": "p31",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -3625,7 +2925,7 @@ const DATA = {
       ],
       "lon": 113.5804,
       "lat": 37.8567,
-      "id": "p40",
+      "id": "p32",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -3702,7 +3002,7 @@ const DATA = {
       ],
       "lon": 113.7518,
       "lat": 23.0207,
-      "id": "p41",
+      "id": "p33",
       "cityCustomerIndex": 1,
       "cityCustomerTotal": 2
     },
@@ -3742,7 +3042,7 @@ const DATA = {
       ],
       "lon": 113.7518,
       "lat": 23.0207,
-      "id": "p42",
+      "id": "p34",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 2
     },
@@ -3866,7 +3166,7 @@ const DATA = {
       ],
       "lon": 113.1214,
       "lat": 23.0218,
-      "id": "p43",
+      "id": "p35",
       "cityCustomerIndex": 1,
       "cityCustomerTotal": 3
     },
@@ -4062,7 +3362,7 @@ const DATA = {
       ],
       "lon": 113.1214,
       "lat": 23.0218,
-      "id": "p44",
+      "id": "p36",
       "cityCustomerIndex": 2,
       "cityCustomerTotal": 3
     },
@@ -4353,51 +3653,9 @@ const DATA = {
       ],
       "lon": 113.1214,
       "lat": 23.0218,
-      "id": "p45",
+      "id": "p37",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 3
-    },
-    {
-      "province": "广东",
-      "city": "广州",
-      "customer": "增城区东进供水",
-      "plantTypes": [
-        "自来水厂"
-      ],
-      "region": "南",
-      "plantCount": 1,
-      "wastewaterCount": 0,
-      "waterCount": 1,
-      "capacity": 30.0,
-      "stations": [
-        {
-          "name": "增城南部水厂",
-          "bidTags": [
-            "WP",
-            "APC"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "自来水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "增城南部水厂",
-              "bidTags": [
-                "WP",
-                "APC"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 113.2644,
-      "lat": 23.1291,
-      "id": "p46",
-      "cityCustomerIndex": 1,
-      "cityCustomerTotal": 8
     },
     {
       "province": "广东",
@@ -4435,9 +3693,9 @@ const DATA = {
       ],
       "lon": 113.2644,
       "lat": 23.1291,
-      "id": "p47",
-      "cityCustomerIndex": 2,
-      "cityCustomerTotal": 8
+      "id": "p38",
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 7
     },
     {
       "province": "广东",
@@ -4475,9 +3733,9 @@ const DATA = {
       ],
       "lon": 113.2644,
       "lat": 23.1291,
-      "id": "p48",
-      "cityCustomerIndex": 3,
-      "cityCustomerTotal": 8
+      "id": "p39",
+      "cityCustomerIndex": 2,
+      "cityCustomerTotal": 7
     },
     {
       "province": "广东",
@@ -4515,9 +3773,9 @@ const DATA = {
       ],
       "lon": 113.2644,
       "lat": 23.1291,
-      "id": "p49",
-      "cityCustomerIndex": 4,
-      "cityCustomerTotal": 8
+      "id": "p40",
+      "cityCustomerIndex": 3,
+      "cityCustomerTotal": 7
     },
     {
       "province": "广东",
@@ -4681,9 +3939,9 @@ const DATA = {
       ],
       "lon": 113.2644,
       "lat": 23.1291,
-      "id": "p50",
-      "cityCustomerIndex": 5,
-      "cityCustomerTotal": 8
+      "id": "p41",
+      "cityCustomerIndex": 4,
+      "cityCustomerTotal": 7
     },
     {
       "province": "广东",
@@ -4829,9 +4087,9 @@ const DATA = {
       ],
       "lon": 113.2644,
       "lat": 23.1291,
-      "id": "p51",
-      "cityCustomerIndex": 6,
-      "cityCustomerTotal": 8
+      "id": "p42",
+      "cityCustomerIndex": 5,
+      "cityCustomerTotal": 7
     },
     {
       "province": "广东",
@@ -4893,9 +4151,9 @@ const DATA = {
       ],
       "lon": 113.2644,
       "lat": 23.1291,
-      "id": "p52",
-      "cityCustomerIndex": 7,
-      "cityCustomerTotal": 8
+      "id": "p43",
+      "cityCustomerIndex": 6,
+      "cityCustomerTotal": 7
     },
     {
       "province": "广东",
@@ -4933,9 +4191,9 @@ const DATA = {
       ],
       "lon": 113.2644,
       "lat": 23.1291,
-      "id": "p53",
+      "id": "p44",
       "cityCustomerIndex": 0,
-      "cityCustomerTotal": 8
+      "cityCustomerTotal": 7
     },
     {
       "province": "广东",
@@ -4973,7 +4231,7 @@ const DATA = {
       ],
       "lon": 116.122,
       "lat": 24.2884,
-      "id": "p54",
+      "id": "p45",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -5013,47 +4271,7 @@ const DATA = {
       ],
       "lon": 116.6819,
       "lat": 23.3541,
-      "id": "p55",
-      "cityCustomerIndex": 0,
-      "cityCustomerTotal": 1
-    },
-    {
-      "province": "广东",
-      "city": "汕尾",
-      "customer": "海丰县广业环保有限公司",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "南",
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "capacity": 0.0,
-      "stations": [
-        {
-          "name": "海丰四污",
-          "bidTags": [
-            "WP"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "海丰四污",
-              "bidTags": [
-                "WP"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 115.3753,
-      "lat": 22.7862,
-      "id": "p56",
+      "id": "p46",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -5093,49 +4311,9 @@ const DATA = {
       ],
       "lon": 113.0819,
       "lat": 22.5787,
-      "id": "p57",
+      "id": "p47",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
-    },
-    {
-      "province": "广东",
-      "city": "深圳",
-      "customer": "中国水务",
-      "plantTypes": [
-        "自来水厂"
-      ],
-      "region": "南",
-      "plantCount": 1,
-      "wastewaterCount": 0,
-      "waterCount": 1,
-      "capacity": 0.0,
-      "stations": [
-        {
-          "name": "深圳市大工业水厂",
-          "bidTags": [
-            "WP"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "自来水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "深圳市大工业水厂",
-              "bidTags": [
-                "WP"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 114.0579,
-      "lat": 22.5431,
-      "id": "p58",
-      "cityCustomerIndex": 1,
-      "cityCustomerTotal": 9
     },
     {
       "province": "广东",
@@ -5173,9 +4351,9 @@ const DATA = {
       ],
       "lon": 114.0579,
       "lat": 22.5431,
-      "id": "p59",
-      "cityCustomerIndex": 2,
-      "cityCustomerTotal": 9
+      "id": "p48",
+      "cityCustomerIndex": 1,
+      "cityCustomerTotal": 8
     },
     {
       "province": "广东",
@@ -5213,9 +4391,9 @@ const DATA = {
       ],
       "lon": 114.0579,
       "lat": 22.5431,
-      "id": "p60",
-      "cityCustomerIndex": 3,
-      "cityCustomerTotal": 9
+      "id": "p49",
+      "cityCustomerIndex": 2,
+      "cityCustomerTotal": 8
     },
     {
       "province": "广东",
@@ -5255,9 +4433,9 @@ const DATA = {
       ],
       "lon": 114.0579,
       "lat": 22.5431,
-      "id": "p61",
-      "cityCustomerIndex": 4,
-      "cityCustomerTotal": 9
+      "id": "p50",
+      "cityCustomerIndex": 3,
+      "cityCustomerTotal": 8
     },
     {
       "province": "广东",
@@ -5295,9 +4473,9 @@ const DATA = {
       ],
       "lon": 114.0579,
       "lat": 22.5431,
-      "id": "p62",
-      "cityCustomerIndex": 5,
-      "cityCustomerTotal": 9
+      "id": "p51",
+      "cityCustomerIndex": 4,
+      "cityCustomerTotal": 8
     },
     {
       "province": "广东",
@@ -5380,9 +4558,9 @@ const DATA = {
       ],
       "lon": 114.0579,
       "lat": 22.5431,
-      "id": "p63",
-      "cityCustomerIndex": 6,
-      "cityCustomerTotal": 9
+      "id": "p52",
+      "cityCustomerIndex": 5,
+      "cityCustomerTotal": 8
     },
     {
       "province": "广东",
@@ -5420,9 +4598,9 @@ const DATA = {
       ],
       "lon": 114.0579,
       "lat": 22.5431,
-      "id": "p64",
-      "cityCustomerIndex": 7,
-      "cityCustomerTotal": 9
+      "id": "p53",
+      "cityCustomerIndex": 6,
+      "cityCustomerTotal": 8
     },
     {
       "province": "广东",
@@ -5529,9 +4707,9 @@ const DATA = {
       ],
       "lon": 114.0579,
       "lat": 22.5431,
-      "id": "p65",
-      "cityCustomerIndex": 8,
-      "cityCustomerTotal": 9
+      "id": "p54",
+      "cityCustomerIndex": 7,
+      "cityCustomerTotal": 8
     },
     {
       "province": "广东",
@@ -5751,51 +4929,9 @@ const DATA = {
       ],
       "lon": 114.0579,
       "lat": 22.5431,
-      "id": "p66",
+      "id": "p55",
       "cityCustomerIndex": 0,
-      "cityCustomerTotal": 9
-    },
-    {
-      "province": "广东",
-      "city": "湛江",
-      "customer": "湛江城发集团",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "南",
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "capacity": 4.0,
-      "stations": [
-        {
-          "name": "西城水质净化厂",
-          "bidTags": [
-            "WP",
-            "APC"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "西城水质净化厂",
-              "bidTags": [
-                "WP",
-                "APC"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 110.3594,
-      "lat": 21.2707,
-      "id": "p67",
-      "cityCustomerIndex": 1,
-      "cityCustomerTotal": 2
+      "cityCustomerTotal": 8
     },
     {
       "province": "广东",
@@ -5833,9 +4969,9 @@ const DATA = {
       ],
       "lon": 110.3594,
       "lat": 21.2707,
-      "id": "p68",
+      "id": "p56",
       "cityCustomerIndex": 0,
-      "cityCustomerTotal": 2
+      "cityCustomerTotal": 1
     },
     {
       "province": "广东",
@@ -5875,7 +5011,7 @@ const DATA = {
       ],
       "lon": 116.6323,
       "lat": 23.6618,
-      "id": "p69",
+      "id": "p57",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -5888,70 +5024,16 @@ const DATA = {
         "自来水厂"
       ],
       "region": "南",
-      "plantCount": 13,
-      "wastewaterCount": 10,
+      "plantCount": 4,
+      "wastewaterCount": 1,
       "waterCount": 3,
-      "capacity": 130.0,
+      "capacity": 64.0,
       "stations": [
         {
           "name": "前山水质净化厂",
           "bidTags": [
             "WP",
             "APC"
-          ]
-        },
-        {
-          "name": "南区水质净化厂二期",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "拱北水质净化厂",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "香洲水质净化厂三期",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "白藤水质净化厂",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "新青水质净化厂",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "三灶水质净化厂",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "平沙水质净化厂",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "南水水质净化厂",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "富山水质净化厂",
-          "bidTags": [
-            "WP"
           ]
         },
         {
@@ -5976,67 +5058,13 @@ const DATA = {
       "plantGroups": [
         {
           "type": "污水厂",
-          "count": 10,
+          "count": 1,
           "stations": [
             {
               "name": "前山水质净化厂",
               "bidTags": [
                 "WP",
                 "APC"
-              ]
-            },
-            {
-              "name": "南区水质净化厂二期",
-              "bidTags": [
-                "WP"
-              ]
-            },
-            {
-              "name": "拱北水质净化厂",
-              "bidTags": [
-                "WP"
-              ]
-            },
-            {
-              "name": "香洲水质净化厂三期",
-              "bidTags": [
-                "WP"
-              ]
-            },
-            {
-              "name": "白藤水质净化厂",
-              "bidTags": [
-                "WP"
-              ]
-            },
-            {
-              "name": "新青水质净化厂",
-              "bidTags": [
-                "WP"
-              ]
-            },
-            {
-              "name": "三灶水质净化厂",
-              "bidTags": [
-                "WP"
-              ]
-            },
-            {
-              "name": "平沙水质净化厂",
-              "bidTags": [
-                "WP"
-              ]
-            },
-            {
-              "name": "南水水质净化厂",
-              "bidTags": [
-                "WP"
-              ]
-            },
-            {
-              "name": "富山水质净化厂",
-              "bidTags": [
-                "WP"
               ]
             }
           ]
@@ -6068,7 +5096,7 @@ const DATA = {
       ],
       "lon": 113.5767,
       "lat": 22.2707,
-      "id": "p70",
+      "id": "p58",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -6080,20 +5108,13 @@ const DATA = {
         "自来水厂"
       ],
       "region": "南",
-      "plantCount": 2,
+      "plantCount": 1,
       "wastewaterCount": 0,
-      "waterCount": 2,
+      "waterCount": 1,
       "capacity": 0.0,
       "stations": [
         {
           "name": "肇庆白沙厂",
-          "bidTags": [
-            "WP",
-            "APC"
-          ]
-        },
-        {
-          "name": "肇庆三榕厂",
           "bidTags": [
             "WP",
             "APC"
@@ -6103,17 +5124,10 @@ const DATA = {
       "plantGroups": [
         {
           "type": "自来水厂",
-          "count": 2,
+          "count": 1,
           "stations": [
             {
               "name": "肇庆白沙厂",
-              "bidTags": [
-                "WP",
-                "APC"
-              ]
-            },
-            {
-              "name": "肇庆三榕厂",
               "bidTags": [
                 "WP",
                 "APC"
@@ -6124,7 +5138,7 @@ const DATA = {
       ],
       "lon": 112.465,
       "lat": 23.0472,
-      "id": "p71",
+      "id": "p59",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -6166,7 +5180,7 @@ const DATA = {
       ],
       "lon": 111.9822,
       "lat": 21.8579,
-      "id": "p72",
+      "id": "p60",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -6206,7 +5220,7 @@ const DATA = {
       ],
       "lon": 108.3669,
       "lat": 22.817,
-      "id": "p73",
+      "id": "p61",
       "cityCustomerIndex": 1,
       "cityCustomerTotal": 2
     },
@@ -6282,49 +5296,9 @@ const DATA = {
       ],
       "lon": 108.3669,
       "lat": 22.817,
-      "id": "p74",
+      "id": "p62",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 2
-    },
-    {
-      "province": "广西",
-      "city": "来宾",
-      "customer": "博世科",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "南",
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "capacity": 0.0,
-      "stations": [
-        {
-          "name": "来宾华锡冶炼有限公司污水站",
-          "bidTags": [
-            "WP"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "来宾华锡冶炼有限公司污水站",
-              "bidTags": [
-                "WP"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 109.2215,
-      "lat": 23.7503,
-      "id": "p75",
-      "cityCustomerIndex": 0,
-      "cityCustomerTotal": 1
     },
     {
       "province": "广西",
@@ -6362,7 +5336,7 @@ const DATA = {
       ],
       "lon": 108.3538,
       "lat": 21.6869,
-      "id": "p76",
+      "id": "p63",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -6402,7 +5376,7 @@ const DATA = {
       ],
       "lon": 118.7969,
       "lat": 32.0603,
-      "id": "p77",
+      "id": "p64",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -6442,7 +5416,7 @@ const DATA = {
       ],
       "lon": 121.6552,
       "lat": 31.8119,
-      "id": "p78",
+      "id": "p65",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -6482,7 +5456,7 @@ const DATA = {
       ],
       "lon": 120.574,
       "lat": 32.3716,
-      "id": "p79",
+      "id": "p66",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -6522,47 +5496,7 @@ const DATA = {
       ],
       "lon": 119.9741,
       "lat": 31.8112,
-      "id": "p80",
-      "cityCustomerIndex": 0,
-      "cityCustomerTotal": 1
-    },
-    {
-      "province": "江苏",
-      "city": "张家港",
-      "customer": "胜科（中国）投资有限公司",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "东",
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "capacity": 4.5,
-      "stations": [
-        {
-          "name": "张家港保税区工业污水厂",
-          "bidTags": [
-            "APC"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "张家港保税区工业污水厂",
-              "bidTags": [
-                "APC"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 120.5555,
-      "lat": 31.8767,
-      "id": "p81",
+      "id": "p67",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -6602,7 +5536,7 @@ const DATA = {
       ],
       "lon": 120.3119,
       "lat": 31.4912,
-      "id": "p82",
+      "id": "p68",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -6646,7 +5580,7 @@ const DATA = {
       ],
       "lon": 119.0153,
       "lat": 33.6104,
-      "id": "p83",
+      "id": "p69",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -6686,9 +5620,9 @@ const DATA = {
       ],
       "lon": 120.5853,
       "lat": 31.2989,
-      "id": "p84",
+      "id": "p70",
       "cityCustomerIndex": 1,
-      "cityCustomerTotal": 6
+      "cityCustomerTotal": 5
     },
     {
       "province": "江苏",
@@ -6726,9 +5660,9 @@ const DATA = {
       ],
       "lon": 120.5853,
       "lat": 31.2989,
-      "id": "p85",
+      "id": "p71",
       "cityCustomerIndex": 2,
-      "cityCustomerTotal": 6
+      "cityCustomerTotal": 5
     },
     {
       "province": "江苏",
@@ -6766,49 +5700,9 @@ const DATA = {
       ],
       "lon": 120.5853,
       "lat": 31.2989,
-      "id": "p86",
+      "id": "p72",
       "cityCustomerIndex": 3,
-      "cityCustomerTotal": 6
-    },
-    {
-      "province": "江苏",
-      "city": "苏州",
-      "customer": "苏州工业园区中法环境技术有限公司",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "东",
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "capacity": 5.0,
-      "stations": [
-        {
-          "name": "中法工业园",
-          "bidTags": [
-            "WP"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "中法工业园",
-              "bidTags": [
-                "WP"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 120.5853,
-      "lat": 31.2989,
-      "id": "p87",
-      "cityCustomerIndex": 4,
-      "cityCustomerTotal": 6
+      "cityCustomerTotal": 5
     },
     {
       "province": "江苏",
@@ -6846,9 +5740,9 @@ const DATA = {
       ],
       "lon": 120.5853,
       "lat": 31.2989,
-      "id": "p88",
-      "cityCustomerIndex": 5,
-      "cityCustomerTotal": 6
+      "id": "p73",
+      "cityCustomerIndex": 4,
+      "cityCustomerTotal": 5
     },
     {
       "province": "江苏",
@@ -6858,19 +5752,13 @@ const DATA = {
         "自来水厂"
       ],
       "region": "东",
-      "plantCount": 2,
+      "plantCount": 1,
       "wastewaterCount": 0,
-      "waterCount": 2,
-      "capacity": 40.0,
+      "waterCount": 1,
+      "capacity": 0.0,
       "stations": [
         {
           "name": "苏州自来水",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "相城水厂",
           "bidTags": [
             "WP"
           ]
@@ -6879,16 +5767,10 @@ const DATA = {
       "plantGroups": [
         {
           "type": "自来水厂",
-          "count": 2,
+          "count": 1,
           "stations": [
             {
               "name": "苏州自来水",
-              "bidTags": [
-                "WP"
-              ]
-            },
-            {
-              "name": "相城水厂",
               "bidTags": [
                 "WP"
               ]
@@ -6898,9 +5780,9 @@ const DATA = {
       ],
       "lon": 120.5853,
       "lat": 31.2989,
-      "id": "p89",
+      "id": "p74",
       "cityCustomerIndex": 0,
-      "cityCustomerTotal": 6
+      "cityCustomerTotal": 5
     },
     {
       "province": "江苏",
@@ -6910,19 +5792,13 @@ const DATA = {
         "自来水厂"
       ],
       "region": "东",
-      "plantCount": 2,
+      "plantCount": 1,
       "wastewaterCount": 0,
-      "waterCount": 2,
-      "capacity": 40.0,
+      "waterCount": 1,
+      "capacity": 20.0,
       "stations": [
         {
           "name": "大港水厂",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "金溪水厂",
           "bidTags": [
             "WP"
           ]
@@ -6931,16 +5807,10 @@ const DATA = {
       "plantGroups": [
         {
           "type": "自来水厂",
-          "count": 2,
+          "count": 1,
           "stations": [
             {
               "name": "大港水厂",
-              "bidTags": [
-                "WP"
-              ]
-            },
-            {
-              "name": "金溪水厂",
               "bidTags": [
                 "WP"
               ]
@@ -6950,7 +5820,7 @@ const DATA = {
       ],
       "lon": 119.425,
       "lat": 32.1896,
-      "id": "p90",
+      "id": "p75",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -6990,7 +5860,7 @@ const DATA = {
       ],
       "lon": 115.9928,
       "lat": 29.712,
-      "id": "p91",
+      "id": "p76",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -7030,7 +5900,7 @@ const DATA = {
       ],
       "lon": 115.8582,
       "lat": 28.682,
-      "id": "p92",
+      "id": "p77",
       "cityCustomerIndex": 1,
       "cityCustomerTotal": 2
     },
@@ -7072,103 +5942,9 @@ const DATA = {
       ],
       "lon": 115.8582,
       "lat": 28.682,
-      "id": "p93",
+      "id": "p78",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 2
-    },
-    {
-      "province": "江西",
-      "city": "宜春",
-      "customer": "宜春市方科污水处理有限公司",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "北",
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "capacity": 18.0,
-      "stations": [
-        {
-          "name": "宜春市中心城区污水厂",
-          "bidTags": [
-            "APC",
-            "WP"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "宜春市中心城区污水厂",
-              "bidTags": [
-                "APC",
-                "WP"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 114.4168,
-      "lat": 27.8156,
-      "id": "p94",
-      "cityCustomerIndex": 0,
-      "cityCustomerTotal": 1
-    },
-    {
-      "province": "江西",
-      "city": "江西",
-      "customer": "江西省华赣环境集团有限公司",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "东",
-      "plantCount": 2,
-      "wastewaterCount": 2,
-      "waterCount": 0,
-      "capacity": 4.0,
-      "stations": [
-        {
-          "name": "新干水厂",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "樟树水厂",
-          "bidTags": [
-            "WP"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 2,
-          "stations": [
-            {
-              "name": "新干水厂",
-              "bidTags": [
-                "WP"
-              ]
-            },
-            {
-              "name": "樟树水厂",
-              "bidTags": [
-                "WP"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 115.425,
-      "lat": 27.72,
-      "id": "p95",
-      "cityCustomerIndex": 0,
-      "cityCustomerTotal": 1
     },
     {
       "province": "河北",
@@ -7206,7 +5982,7 @@ const DATA = {
       ],
       "lon": 114.8863,
       "lat": 40.7675,
-      "id": "p96",
+      "id": "p79",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -7246,7 +6022,7 @@ const DATA = {
       ],
       "lon": 114.5025,
       "lat": 38.0455,
-      "id": "p97",
+      "id": "p80",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -7331,209 +6107,9 @@ const DATA = {
       ],
       "lon": 115.8605,
       "lat": 39.0427,
-      "id": "p98",
+      "id": "p81",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
-    },
-    {
-      "province": "河北",
-      "city": "高碑店",
-      "customer": "荣庭环保",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "北",
-      "plantCount": 2,
-      "wastewaterCount": 2,
-      "waterCount": 0,
-      "capacity": 0.0,
-      "stations": [
-        {
-          "name": "高碑店污水厂",
-          "bidTags": [
-            "WP",
-            "APC"
-          ]
-        },
-        {
-          "name": "关庭污水厂",
-          "bidTags": [
-            "WP",
-            "APC"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 2,
-          "stations": [
-            {
-              "name": "高碑店污水厂",
-              "bidTags": [
-                "WP",
-                "APC"
-              ]
-            },
-            {
-              "name": "关庭污水厂",
-              "bidTags": [
-                "WP",
-                "APC"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 115.8737,
-      "lat": 39.3277,
-      "id": "p99",
-      "cityCustomerIndex": 0,
-      "cityCustomerTotal": 1
-    },
-    {
-      "province": "河南",
-      "city": "新乡",
-      "customer": "新乡市排水工程有限公司",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "北",
-      "plantCount": 4,
-      "wastewaterCount": 4,
-      "waterCount": 0,
-      "capacity": 40.0,
-      "stations": [
-        {
-          "name": "小尚庄污水处理厂",
-          "bidTags": [
-            "APC"
-          ]
-        },
-        {
-          "name": "贾屯污水处理厂",
-          "bidTags": [
-            "APC"
-          ]
-        },
-        {
-          "name": "铁西北部污水处理厂",
-          "bidTags": [
-            "APC"
-          ]
-        },
-        {
-          "name": "小店污水处理厂（二期）",
-          "bidTags": [
-            "APC"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 4,
-          "stations": [
-            {
-              "name": "小尚庄污水处理厂",
-              "bidTags": [
-                "APC"
-              ]
-            },
-            {
-              "name": "贾屯污水处理厂",
-              "bidTags": [
-                "APC"
-              ]
-            },
-            {
-              "name": "铁西北部污水处理厂",
-              "bidTags": [
-                "APC"
-              ]
-            },
-            {
-              "name": "小店污水处理厂（二期）",
-              "bidTags": [
-                "APC"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 113.9268,
-      "lat": 35.303,
-      "id": "p100",
-      "cityCustomerIndex": 0,
-      "cityCustomerTotal": 1
-    },
-    {
-      "province": "河南",
-      "city": "郑州",
-      "customer": "中原环保股份有限公司",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "北",
-      "plantCount": 3,
-      "wastewaterCount": 3,
-      "waterCount": 0,
-      "capacity": 50.0,
-      "stations": [
-        {
-          "name": "郑州市五龙口污水处理厂",
-          "bidTags": [
-            "WP",
-            "APC"
-          ]
-        },
-        {
-          "name": "中原环保港区三污",
-          "bidTags": [
-            "APC"
-          ]
-        },
-        {
-          "name": "陈三桥污水处理厂",
-          "bidTags": [
-            "WP",
-            "APC"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 3,
-          "stations": [
-            {
-              "name": "郑州市五龙口污水处理厂",
-              "bidTags": [
-                "WP",
-                "APC"
-              ]
-            },
-            {
-              "name": "中原环保港区三污",
-              "bidTags": [
-                "APC"
-              ]
-            },
-            {
-              "name": "陈三桥污水处理厂",
-              "bidTags": [
-                "WP",
-                "APC"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 113.6254,
-      "lat": 34.7466,
-      "id": "p101",
-      "cityCustomerIndex": 1,
-      "cityCustomerTotal": 2
     },
     {
       "province": "河南",
@@ -7571,9 +6147,9 @@ const DATA = {
       ],
       "lon": 113.6254,
       "lat": 34.7466,
-      "id": "p102",
+      "id": "p82",
       "cityCustomerIndex": 0,
-      "cityCustomerTotal": 2
+      "cityCustomerTotal": 1
     },
     {
       "province": "浙江",
@@ -7611,47 +6187,7 @@ const DATA = {
       ],
       "lon": 120.2416,
       "lat": 29.2894,
-      "id": "p103",
-      "cityCustomerIndex": 0,
-      "cityCustomerTotal": 1
-    },
-    {
-      "province": "浙江",
-      "city": "义乌",
-      "customer": "义乌市水处理有限责任公司",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "东",
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "capacity": 5.0,
-      "stations": [
-        {
-          "name": "义亭水厂",
-          "bidTags": [
-            "APC"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "义亭水厂",
-              "bidTags": [
-                "APC"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 120.0751,
-      "lat": 29.3068,
-      "id": "p104",
+      "id": "p83",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -7691,7 +6227,7 @@ const DATA = {
       ],
       "lon": 121.4208,
       "lat": 28.6557,
-      "id": "p105",
+      "id": "p84",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -7812,7 +6348,7 @@ const DATA = {
       ],
       "lon": 121.55,
       "lat": 29.875,
-      "id": "p106",
+      "id": "p85",
       "cityCustomerIndex": 1,
       "cityCustomerTotal": 2
     },
@@ -7852,7 +6388,7 @@ const DATA = {
       ],
       "lon": 121.55,
       "lat": 29.875,
-      "id": "p107",
+      "id": "p86",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 2
     },
@@ -7894,7 +6430,7 @@ const DATA = {
       ],
       "lon": 120.1551,
       "lat": 30.2741,
-      "id": "p108",
+      "id": "p87",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -7903,41 +6439,22 @@ const DATA = {
       "city": "桐乡",
       "customer": "桐乡水务集团",
       "plantTypes": [
-        "污水厂",
         "自来水厂"
       ],
       "region": "东",
-      "plantCount": 2,
-      "wastewaterCount": 1,
+      "plantCount": 1,
+      "wastewaterCount": 0,
       "waterCount": 1,
-      "capacity": 55.0,
+      "capacity": 40.0,
       "stations": [
         {
           "name": "嘉兴桐乡新运河水厂",
           "bidTags": [
             "APC"
           ]
-        },
-        {
-          "name": "崇福污水厂",
-          "bidTags": [
-            "APC"
-          ]
         }
       ],
       "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "崇福污水厂",
-              "bidTags": [
-                "APC"
-              ]
-            }
-          ]
-        },
         {
           "type": "自来水厂",
           "count": 1,
@@ -7953,7 +6470,7 @@ const DATA = {
       ],
       "lon": 120.565,
       "lat": 30.63,
-      "id": "p109",
+      "id": "p88",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -7993,51 +6510,9 @@ const DATA = {
       ],
       "lon": 120.6994,
       "lat": 27.9949,
-      "id": "p110",
+      "id": "p89",
       "cityCustomerIndex": 1,
-      "cityCustomerTotal": 3
-    },
-    {
-      "province": "浙江",
-      "city": "温州",
-      "customer": "温州杭钢水务有限公司",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "东",
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "capacity": 0.0,
-      "stations": [
-        {
-          "name": "温州中心污水厂",
-          "bidTags": [
-            "APC",
-            "WP"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "温州中心污水厂",
-              "bidTags": [
-                "APC",
-                "WP"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 120.6994,
-      "lat": 27.9949,
-      "id": "p111",
-      "cityCustomerIndex": 2,
-      "cityCustomerTotal": 3
+      "cityCustomerTotal": 2
     },
     {
       "province": "浙江",
@@ -8075,9 +6550,9 @@ const DATA = {
       ],
       "lon": 120.6994,
       "lat": 27.9949,
-      "id": "p112",
+      "id": "p90",
       "cityCustomerIndex": 0,
-      "cityCustomerTotal": 3
+      "cityCustomerTotal": 2
     },
     {
       "province": "浙江",
@@ -8117,7 +6592,7 @@ const DATA = {
       ],
       "lon": 120.5821,
       "lat": 29.9971,
-      "id": "p113",
+      "id": "p91",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -8130,21 +6605,15 @@ const DATA = {
         "自来水厂"
       ],
       "region": "东",
-      "plantCount": 3,
-      "wastewaterCount": 2,
+      "plantCount": 2,
+      "wastewaterCount": 1,
       "waterCount": 1,
-      "capacity": 28.0,
+      "capacity": 24.0,
       "stations": [
         {
           "name": "浙江永康城市污水处理厂五期",
           "bidTags": [
             "APC"
-          ]
-        },
-        {
-          "name": "永康南山污水厂",
-          "bidTags": [
-            "WP"
           ]
         },
         {
@@ -8157,18 +6626,12 @@ const DATA = {
       "plantGroups": [
         {
           "type": "污水厂",
-          "count": 2,
+          "count": 1,
           "stations": [
             {
               "name": "浙江永康城市污水处理厂五期",
               "bidTags": [
                 "APC"
-              ]
-            },
-            {
-              "name": "永康南山污水厂",
-              "bidTags": [
-                "WP"
               ]
             }
           ]
@@ -8188,7 +6651,7 @@ const DATA = {
       ],
       "lon": 119.6495,
       "lat": 29.0895,
-      "id": "p114",
+      "id": "p92",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -8252,7 +6715,7 @@ const DATA = {
       ],
       "lon": 109.5119,
       "lat": 18.2528,
-      "id": "p115",
+      "id": "p93",
       "cityCustomerIndex": 1,
       "cityCustomerTotal": 2
     },
@@ -8452,7 +6915,7 @@ const DATA = {
       ],
       "lon": 109.5119,
       "lat": 18.2528,
-      "id": "p116",
+      "id": "p94",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 2
     },
@@ -8494,93 +6957,9 @@ const DATA = {
       ],
       "lon": 110.1983,
       "lat": 20.044,
-      "id": "p117",
+      "id": "p95",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
-    },
-    {
-      "province": "湖北",
-      "city": "大冶",
-      "customer": "中工武大设计集团有限公司",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "北",
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "capacity": 4.0,
-      "stations": [
-        {
-          "name": "黄石大箕铺镇生活污水处理厂二期",
-          "bidTags": [
-            "WP",
-            "APC"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "黄石大箕铺镇生活污水处理厂二期",
-              "bidTags": [
-                "WP",
-                "APC"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 114.9748,
-      "lat": 30.0988,
-      "id": "p118",
-      "cityCustomerIndex": 1,
-      "cityCustomerTotal": 2
-    },
-    {
-      "province": "湖北",
-      "city": "大冶",
-      "customer": "大冶市住建局",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "北",
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "capacity": 4.5,
-      "stations": [
-        {
-          "name": "大箕铺镇生活污水处理厂",
-          "bidTags": [
-            "WP",
-            "APC"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "大箕铺镇生活污水处理厂",
-              "bidTags": [
-                "WP",
-                "APC"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 114.9748,
-      "lat": 30.0988,
-      "id": "p119",
-      "cityCustomerIndex": 0,
-      "cityCustomerTotal": 2
     },
     {
       "province": "湖北",
@@ -8618,7 +6997,7 @@ const DATA = {
       ],
       "lon": 111.7605,
       "lat": 30.4258,
-      "id": "p120",
+      "id": "p96",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -8658,7 +7037,7 @@ const DATA = {
       ],
       "lon": 114.3054,
       "lat": 30.5928,
-      "id": "p121",
+      "id": "p97",
       "cityCustomerIndex": 1,
       "cityCustomerTotal": 3
     },
@@ -8698,7 +7077,7 @@ const DATA = {
       ],
       "lon": 114.3054,
       "lat": 30.5928,
-      "id": "p122",
+      "id": "p98",
       "cityCustomerIndex": 2,
       "cityCustomerTotal": 3
     },
@@ -8738,61 +7117,9 @@ const DATA = {
       ],
       "lon": 114.3054,
       "lat": 30.5928,
-      "id": "p123",
+      "id": "p99",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 3
-    },
-    {
-      "province": "湖北",
-      "city": "潜江",
-      "customer": "潜江市自来水公司",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "北",
-      "plantCount": 2,
-      "wastewaterCount": 2,
-      "waterCount": 0,
-      "capacity": 7.5,
-      "stations": [
-        {
-          "name": "潜江市城南生活污水处理厂",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "潜江市城北生活污水处理厂",
-          "bidTags": [
-            "WP"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 2,
-          "stations": [
-            {
-              "name": "潜江市城南生活污水处理厂",
-              "bidTags": [
-                "WP"
-              ]
-            },
-            {
-              "name": "潜江市城北生活污水处理厂",
-              "bidTags": [
-                "WP"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 112.8993,
-      "lat": 30.4015,
-      "id": "p124",
-      "cityCustomerIndex": 0,
-      "cityCustomerTotal": 1
     },
     {
       "province": "湖南",
@@ -8830,7 +7157,7 @@ const DATA = {
       ],
       "lon": 112.9388,
       "lat": 28.2282,
-      "id": "p125",
+      "id": "p100",
       "cityCustomerIndex": 1,
       "cityCustomerTotal": 3
     },
@@ -8842,51 +7169,27 @@ const DATA = {
         "污水厂"
       ],
       "region": "南",
-      "plantCount": 3,
-      "wastewaterCount": 3,
+      "plantCount": 1,
+      "wastewaterCount": 1,
       "waterCount": 0,
-      "capacity": 28.2,
+      "capacity": 24.0,
       "stations": [
         {
           "name": "临空污水处理中心",
           "bidTags": [
             "APC"
           ]
-        },
-        {
-          "name": "江背工业园污水厂",
-          "bidTags": [
-            "WP"
-          ]
-        },
-        {
-          "name": "毛塘铺工业园污水处理厂",
-          "bidTags": [
-            "WP"
-          ]
         }
       ],
       "plantGroups": [
         {
           "type": "污水厂",
-          "count": 3,
+          "count": 1,
           "stations": [
             {
               "name": "临空污水处理中心",
               "bidTags": [
                 "APC"
-              ]
-            },
-            {
-              "name": "江背工业园污水厂",
-              "bidTags": [
-                "WP"
-              ]
-            },
-            {
-              "name": "毛塘铺工业园污水处理厂",
-              "bidTags": [
-                "WP"
               ]
             }
           ]
@@ -8894,7 +7197,7 @@ const DATA = {
       ],
       "lon": 112.9388,
       "lat": 28.2282,
-      "id": "p126",
+      "id": "p101",
       "cityCustomerIndex": 2,
       "cityCustomerTotal": 3
     },
@@ -8934,7 +7237,7 @@ const DATA = {
       ],
       "lon": 112.9388,
       "lat": 28.2282,
-      "id": "p127",
+      "id": "p102",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 3
     },
@@ -8974,7 +7277,7 @@ const DATA = {
       ],
       "lon": 118.6757,
       "lat": 24.8741,
-      "id": "p128",
+      "id": "p103",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -9016,49 +7319,7 @@ const DATA = {
       ],
       "lon": 121.6147,
       "lat": 38.914,
-      "id": "p129",
-      "cityCustomerIndex": 0,
-      "cityCustomerTotal": 1
-    },
-    {
-      "province": "辽宁",
-      "city": "沈阳",
-      "customer": "国能辽宁环保产业集团有限公司",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "北",
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "capacity": 40.0,
-      "stations": [
-        {
-          "name": "国能沈阳北部污水处理厂",
-          "bidTags": [
-            "WP",
-            "APC"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "国能沈阳北部污水处理厂",
-              "bidTags": [
-                "WP",
-                "APC"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 123.4315,
-      "lat": 41.8057,
-      "id": "p130",
+      "id": "p104",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -9098,7 +7359,7 @@ const DATA = {
       ],
       "lon": 121.9795,
       "lat": 39.6271,
-      "id": "p131",
+      "id": "p105",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -9138,7 +7399,7 @@ const DATA = {
       ],
       "lon": 122.0707,
       "lat": 41.1199,
-      "id": "p132",
+      "id": "p106",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
     },
@@ -9151,10 +7412,10 @@ const DATA = {
         "自来水厂"
       ],
       "region": "西",
-      "plantCount": 6,
-      "wastewaterCount": 2,
+      "plantCount": 5,
+      "wastewaterCount": 1,
       "waterCount": 4,
-      "capacity": 193.0,
+      "capacity": 153.0,
       "stations": [
         {
           "name": "新大江水厂",
@@ -9185,31 +7446,17 @@ const DATA = {
           "bidTags": [
             "WP"
           ]
-        },
-        {
-          "name": "鸡冠石四期",
-          "bidTags": [
-            "WP",
-            "APC"
-          ]
         }
       ],
       "plantGroups": [
         {
           "type": "污水厂",
-          "count": 2,
+          "count": 1,
           "stations": [
             {
               "name": "鸡冠石水厂",
               "bidTags": [
                 "WP"
-              ]
-            },
-            {
-              "name": "鸡冠石四期",
-              "bidTags": [
-                "WP",
-                "APC"
               ]
             }
           ]
@@ -9247,89 +7494,9 @@ const DATA = {
       ],
       "lon": 106.5516,
       "lat": 29.563,
-      "id": "p133",
+      "id": "p107",
       "cityCustomerIndex": 0,
       "cityCustomerTotal": 1
-    },
-    {
-      "province": "陕西",
-      "city": "榆林",
-      "customer": "中建环能",
-      "plantTypes": [
-        "污水厂"
-      ],
-      "region": "西",
-      "plantCount": 1,
-      "wastewaterCount": 1,
-      "waterCount": 0,
-      "capacity": 0.0,
-      "stations": [
-        {
-          "name": "榆林污水厂（SAAS）",
-          "bidTags": [
-            "WP"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "污水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "榆林污水厂（SAAS）",
-              "bidTags": [
-                "WP"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 109.7346,
-      "lat": 38.2852,
-      "id": "p134",
-      "cityCustomerIndex": 0,
-      "cityCustomerTotal": 1
-    },
-    {
-      "province": "青海",
-      "city": "海东",
-      "customer": "海东市水务集团",
-      "plantTypes": [
-        "自来水厂"
-      ],
-      "region": "西",
-      "plantCount": 1,
-      "wastewaterCount": 0,
-      "waterCount": 1,
-      "capacity": 0.0,
-      "stations": [
-        {
-          "name": "海东杨家自来水厂",
-          "bidTags": [
-            "WP"
-          ]
-        }
-      ],
-      "plantGroups": [
-        {
-          "type": "自来水厂",
-          "count": 1,
-          "stations": [
-            {
-              "name": "海东杨家自来水厂",
-              "bidTags": [
-                "WP"
-              ]
-            }
-          ]
-        }
-      ],
-      "lon": 102.1043,
-      "lat": 36.502,
-      "id": "p135",
-      "cityCustomerIndex": 1,
-      "cityCustomerTotal": 2
     },
     {
       "province": "青海",
@@ -9367,9 +7534,9 @@ const DATA = {
       ],
       "lon": 102.1043,
       "lat": 36.502,
-      "id": "p136",
+      "id": "p108",
       "cityCustomerIndex": 0,
-      "cityCustomerTotal": 2
+      "cityCustomerTotal": 1
     }
   ]
 };
