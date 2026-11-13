@@ -2,12 +2,8 @@
 2026-09-09T05:47:59.050954+00:00 | records=311 | changed=True | hash=c4a8621416d4cdfa
 2026-09-09T05:48:57.727351+00:00 | records=311 | changed=True | hash=5e987a08ef376b7b
 2026-09-09T05:49:54.820015+00:00 | records=311 | changed=True | hash=6982aba44b486145
-2026-09-14T07:42:40.081839+00:00 | records=311 | changed=True | hash=dcb7ce82adc0a8fb
-2026-09-21T07:46:25.335067+00:00 | records=311 | changed=True | hash=3522859bfc1d4bc2
-2026-09-28T08:25:35.171766+00:00 | records=311 | changed=True | hash=dcbe9f672164a37e
-2026-10-05T08:38:31.143977+00:00 | records=311 | changed=True | hash=eb354cb29c420689
-2026-10-12T08:50:09.199060+00:00 | records=316 | changed=True | hash=5065ff5e36c0ba89
-2026-10-19T07:29:08.795341+00:00 | records=316 | changed=True | hash=74ebba9170d34173
-2026-10-26T07:33:44.847872+00:00 | records=316 | changed=True | hash=a5ef23492f42bccf
-2026-11-02T09:02:13.599835+00:00 | records=316 | changed=True | hash=27d5207c979eb9b8
-2026-11-09T09:23:29.934734+00:00 | records=317 | changed=True | hash=b67c5196f3f3510f | coordWarnings=2
+2026-09-09T08:13:21.489348+00:00 | records=311 | changed=True | hash=318729838eae55a7
+2026-10-12T06:59:22.945654+00:00 | records=316 | changed=True | hash=5655dca3d2949f41
+2026-10-12T07:06:23.865861+00:00 | records=316 | changed=True | hash=ca6ea1d7df23daa3
+2026-11-09T01:42:28.310272+00:00 | records=317 | changed=True | hash=9e4ca41394973215 | coordWarnings=2
+2026-11-13T06:54:08.056918+00:00 | raw=317 | kept=252 | changed=True | hash=92b1c7abc390d9cf | coordWarnings=2
